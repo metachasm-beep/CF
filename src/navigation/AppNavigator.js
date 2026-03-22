@@ -3,6 +3,7 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import HomeScreen from '../screens/HomeScreen';
 import AddExpenseScreen from '../screens/AddExpenseScreen';
 import LoginScreen from '../screens/LoginScreen';
+import HistoryScreen from '../screens/HistoryScreen';
 import useAuthStore from '../store/authStore';
 
 const Stack = createNativeStackNavigator();
@@ -29,6 +30,7 @@ const AppNavigator = () => {
             component={AddExpenseScreen} 
             options={{ presentation: 'modal' }}
           />
+          <Stack.Screen name="History" component={HistoryScreen} />
         </>
       ) : (
         <Stack.Screen name="Login" component={LoginScreen} />

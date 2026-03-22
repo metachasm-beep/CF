@@ -132,7 +132,7 @@ const AddExpenseScreen = ({ navigation }) => {
             <View className="items-center mb-10">
               <Text className="text-muted text-sm mb-2">AMOUNT</Text>
               <View className="flex-row items-baseline">
-                <Text className="text-text text-4xl mr-2">$</Text>
+                <Text className="text-text text-4xl mr-2">₹</Text>
                 <TextInput 
                   className="text-text text-6xl font-black min-w-[200px] text-center"
                   placeholder="0.00"
