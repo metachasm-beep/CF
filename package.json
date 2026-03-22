@@ -34,7 +34,7 @@
     "moti": "^0.30.0",
     "nativewind": "^4.2.3",
     "papaparse": "^5.5.3",
-    "react": "19.2.4",
+    "react": "19.2.0",
     "react-native": "0.83.2",
     "react-native-gesture-handler": "~2.30.0",
     "react-native-graph": "^1.1.0",
@@ -48,6 +48,10 @@
     "react-native-worklets-core": "^1.6.3",
     "tailwindcss": "^3.3.2",
     "zustand": "^5.0.12"
+  },
+  "overrides": {
+    "react": "19.2.0",
+    "react-dom": "19.2.0"
   },
   "private": true,
   "devDependencies": {
