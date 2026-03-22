@@ -8,6 +8,7 @@ import { X, ChevronDown, Check, Edit3, CreditCard, Tag, Camera as CameraIcon, Im
 import { EXPENSE_CATEGORIES, SUB_CATEGORIES, PAYMENT_MODES } from '../utils/categories';
 import { saveExpense } from '../services/api';
 import useAuthStore from '../store/authStore';
+import AnimatedCheckmark from '../components/AnimatedCheckmark';
 import * as ImagePicker from 'expo-image-picker';
 import * as MediaLibrary from 'expo-media-library';
 import Carousel from 'react-native-reanimated-carousel';
@@ -26,8 +27,9 @@ const AddExpenseScreen = ({ navigation }) => {
   });
 
   const [images, setImages] = useState([]);
-  const [activeSelector, setActiveSelector] = useState(null); // 'category' | 'subCategory' | 'mode'
+  const [activeSelector, setActiveSelector] = useState(null); 
   const [imageModalVisible, setImageModalVisible] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
 
   const availableSubCategories = formData.category ? EXPENSE_CATEGORIES[formData.category] || [] : [];
   
@@ -50,7 +52,6 @@ const AddExpenseScreen = ({ navigation }) => {
 
       if (!result.canceled && result.assets && result.assets.length > 0) {
         const uri = result.assets[0].uri;
-        // Save securely to phone gallery
         const asset = await MediaLibrary.createAssetAsync(uri);
         setImages([...images, asset.uri]);
         Alert.alert('Success', 'Receipt captured and saved to phone gallery!');
@@ -75,8 +76,7 @@ const AddExpenseScreen = ({ navigation }) => {
       };
       
       await saveExpense(payload);
-      Alert.alert("Success", "Expense added successfully!");
-      navigation.goBack();
+      setShowSuccess(true);
     } catch (error) {
       Alert.alert("Error", "Failed to save expense. Please try again.");
     }
@@ -336,6 +336,12 @@ const AddExpenseScreen = ({ navigation }) => {
       
       {renderSelectorModal()}
       {render3DImageModal()}
+      {showSuccess && (
+        <AnimatedCheckmark onAnimationComplete={() => {
+          setShowSuccess(false);
+          navigation.goBack();
+        }} />
+      )}
     </SafeAreaView>
   );
 };
