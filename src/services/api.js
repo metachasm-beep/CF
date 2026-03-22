@@ -7,8 +7,16 @@ const OFFLINE_QUEUE_KEY = '@cf_offline_queue';
 
 export const saveExpense = async (data) => {
   try {
-    const response = await axios.post(API_URL, data);
-    return { ...response.data, offline: false };
+    const response = await fetch(API_URL, {
+      method: "POST",
+      // Google Apps Script requires text/plain to avoid OPTIONS preflight CORS errors
+      headers: {
+        "Content-Type": "text/plain;charset=utf-8",
+      },
+      body: JSON.stringify(data),
+    });
+    const result = await response.json();
+    return { ...result, offline: false };
   } catch (error) {
     console.warn('Network error detected. Saving expense locally to sync later.', error.message);
     try {

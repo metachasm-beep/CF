@@ -7,7 +7,8 @@ import Animated, {
   Easing, 
   withSequence, 
   withDelay, 
-  withSpring 
+  withSpring,
+  runOnJS
 } from 'react-native-reanimated';
 import Svg, { Circle, Path } from 'react-native-svg';
 
@@ -30,9 +31,9 @@ const AnimatedCheckmark = ({ onAnimationComplete }) => {
       withTiming(1, { duration: 500, easing: Easing.out(Easing.cubic) }, () => {
         if (onAnimationComplete) {
           // Fade out after completion
-          opacity.value = withDelay(1000, withTiming(0, { duration: 400 }, (isFinished) => {
+          opacity.value = withDelay(800, withTiming(0, { duration: 300 }, (isFinished) => {
              if (isFinished) {
-               // ... trigger callback
+               runOnJS(onAnimationComplete)();
              }
           }));
         }
