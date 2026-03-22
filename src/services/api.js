@@ -57,3 +57,56 @@ export const syncOfflineExpenses = async () => {
     console.error('Sync failure:', e);
   }
 };
+
+export const fetchExpenses = async () => {
+  try {
+    const response = await fetch(`https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/gviz/tq?tqx=out:csv&sheet=Sheet1`);
+    const csvText = await response.text();
+    
+    // Fallback simple parsing until PapaParse is ready
+    const lines = csvText.split('\n');
+    const headers = lines[0].replace(/"/g, '').split(',');
+    
+    const data = [];
+    for (let i = 1; i < lines.length; i++) {
+        // Handle basic commas inside quotes natively if PapaParse is absent
+        const row = lines[i];
+        if (!row) continue;
+        
+        let inQuotes = false;
+        let cVal = '';
+        const values = [];
+        
+        for (let j = 0; j < row.length; j++) {
+            const char = row[j];
+            if (char === '"') {
+                inQuotes = !inQuotes;
+            } else if (char === ',' && !inQuotes) {
+                values.push(cVal);
+                cVal = '';
+            } else {
+                cVal += char;
+            }
+        }
+        values.push(cVal);
+        
+        const expense = {
+          id: i.toString(),
+          date: values[0] || '',
+          amount: parseFloat((values[1] || '0').replace(/,/g, '')),
+          category: values[2] || '',
+          subCategory: values[3] || '',
+          mode: values[4] || '',
+          remarks: values[5] || '',
+          user: values[6] || ''
+        };
+        data.push(expense);
+    }
+    
+    // Return reverse chronological order (newest first)
+    return data.reverse();
+  } catch (error) {
+    console.error('Failed to fetch live expenses:', error);
+    return [];
+  }
+};

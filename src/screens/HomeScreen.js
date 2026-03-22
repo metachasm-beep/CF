@@ -2,17 +2,44 @@ import React, { useEffect, useState } from 'react';
 import { View, Text, TouchableOpacity, SafeAreaView, StatusBar, Alert } from 'react-native';
 import { Plus, LogOut, ArrowUpRight, ArrowDownLeft, Clock, BarChart3, Receipt, Wallet } from 'lucide-react-native';
 import { FlashList } from '@shopify/flash-list';
+import { useFocusEffect } from '@react-navigation/native';
 import useAuthStore from '../store/authStore';
-import { syncOfflineExpenses } from '../services/api';
+import { syncOfflineExpenses, fetchExpenses } from '../services/api';
 
 const HomeScreen = ({ navigation }) => {
   const { user, logout } = useAuthStore();
   const [recentTransactions, setRecentTransactions] = useState([]);
+  const [totalExpense, setTotalExpense] = useState(0);
+  const [activeProjectCount, setActiveProjectCount] = useState(0);
+  const [isRefreshing, setIsRefreshing] = useState(false);
 
-  useEffect(() => {
-    // Safely attempt to sync offline expenses when the home screen mounts
-    syncOfflineExpenses();
-  }, []);
+  useFocusEffect(
+    React.useCallback(() => {
+      const loadData = async () => {
+        setIsRefreshing(true);
+        // Safely attempt to sync offline expenses when the home screen mounts
+        await syncOfflineExpenses();
+        
+        // Fetch Live Sheets Data
+        const expenses = await fetchExpenses();
+        setRecentTransactions(expenses.slice(0, 10)); // Top 10 recent
+        
+        // Calculate Totals
+        const total = expenses.reduce((sum, item) => sum + (Number(item.amount) || 0), 0);
+        setTotalExpense(total);
+        
+        // Calculate Unique Projects (Sub-Categories under Site Expenses)
+        const siteProjects = new Set(
+          expenses.filter(i => i.category === 'Site Expenses' && i.subCategory).map(i => i.subCategory)
+        );
+        setActiveProjectCount(siteProjects.size);
+        
+        setIsRefreshing(false);
+      };
+      
+      loadData();
+    }, [])
+  );
 
   const handleLogout = () => {
     Alert.alert(
@@ -40,7 +67,12 @@ const HomeScreen = ({ navigation }) => {
 
       {/* Summary Bento Grid */}
       <View className="flex-row gap-4 mb-6">
-        <View className="flex-1 bg-primary p-5 rounded-3xl shadow-md min-h-[160px] justify-between">
+        <TouchableOpacity 
+          onPress={() => navigation.navigate('History')}
+          className="flex-1 bg-primary p-5 rounded-3xl shadow-md min-h-[160px] justify-between active:bg-teal-800"
+          accessibilityRole="button"
+          accessibilityLabel="Total Expenses, Tap to view History"
+        >
           <View className="flex-row justify-between items-start">
             <View className="bg-white/20 p-2 rounded-xl">
               <ArrowDownLeft size={20} color="#FFFFFF" strokeWidth={2.5} />
@@ -49,11 +81,16 @@ const HomeScreen = ({ navigation }) => {
           </View>
           <View>
             <Text className="text-white/70 text-sm mb-1">Total Expenses</Text>
-            <Text className="text-white text-3xl font-bold">₹0</Text>
+            <Text className="text-white text-3xl font-bold">₹{totalExpense.toLocaleString()}</Text>
           </View>
-        </View>
+        </TouchableOpacity>
         
-        <View className="flex-1 bg-paper p-5 rounded-3xl border border-border min-h-[160px] justify-between shadow-apple">
+        <TouchableOpacity 
+          onPress={() => navigation.navigate('Projects')}
+          className="flex-1 bg-paper p-5 rounded-3xl border border-border min-h-[160px] justify-between shadow-apple active:bg-gray-50"
+          accessibilityRole="button"
+          accessibilityLabel="Active Projects, Tap to view details"
+        >
           <View className="flex-row justify-between items-start">
             <View className="bg-secondary/10 p-2 rounded-xl">
               <ArrowUpRight size={20} color="#14B8A6" strokeWidth={2.5} />
@@ -62,9 +99,9 @@ const HomeScreen = ({ navigation }) => {
           </View>
           <View>
             <Text className="text-muted text-sm mb-1">Active Projects</Text>
-            <Text className="text-text text-3xl font-bold">0</Text>
+            <Text className="text-text text-3xl font-bold">{activeProjectCount}</Text>
           </View>
-        </View>
+        </TouchableOpacity>
       </View>
 
       {/* Quick Actions */}
@@ -108,26 +145,35 @@ const HomeScreen = ({ navigation }) => {
           data={recentTransactions}
           ListHeaderComponent={renderHeader}
           estimatedItemSize={90}
+          onRefresh={() => {}} // Hooked into loadData internally
+          refreshing={isRefreshing}
           showsVerticalScrollIndicator={false}
           ListEmptyComponent={
             <View className="bg-paper p-6 rounded-apple border border-border items-center justify-center shadow-sm">
-              <Text className="text-muted text-center italic">No recent transactions recorded yet.</Text>
+              {isRefreshing ? (
+                 <ActivityIndicator size="small" color="#0F766E" />
+              ) : (
+                 <Text className="text-muted text-center italic">No recent transactions recorded yet.</Text>
+              )}
             </View>
           }
           renderItem={({ item: tx }) => (
-            <View className="bg-paper p-5 rounded-apple border border-border flex-row items-center mb-4 shadow-sm">
+            <TouchableOpacity 
+              className="bg-paper p-5 rounded-apple border border-border flex-row items-center mb-4 shadow-sm active:bg-gray-50"
+              onPress={() => navigation.navigate('History')}
+            >
               <View className="w-12 h-12 bg-background rounded-2xl items-center justify-center mr-4">
                 <Wallet size={24} color="#1D1D1F" />
               </View>
               <View className="flex-1">
-                <Text className="font-bold text-text text-lg">{tx.title}</Text>
-                <Text className="text-muted text-sm">{tx.category}</Text>
+                <Text className="font-bold text-text text-lg">{tx.remarks || tx.subCategory}</Text>
+                <Text className="text-muted text-sm">{tx.category} • {tx.mode}</Text>
               </View>
               <View className="items-end">
-                <Text className="font-bold text-text text-lg mb-1">₹{tx.amount.toLocaleString()}</Text>
+                <Text className="font-bold text-text text-lg mb-1">₹{tx.amount ? tx.amount.toLocaleString() : '0'}</Text>
                 <Text className="text-muted text-xs">{tx.date}</Text>
               </View>
-            </View>
+            </TouchableOpacity>
           )}
           contentContainerStyle={{ paddingBottom: 40 }}
         />

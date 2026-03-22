@@ -15,7 +15,7 @@ const AnimatedTextWord = ({ word, index }) => {
 };
 
 const WelcomeScreen = ({ navigation }) => {
-  const phrase = "Welcome Chirag! Lets run some numbers!!!";
+  const phrase = "Sup Bro! Lets run some numbers !";
   const words = phrase.split(" ");
   const scale = useSharedValue(0.9);
 
