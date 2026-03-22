@@ -1,38 +1,57 @@
-import React, { useEffect } from 'react';
-import { View, Text, TouchableOpacity, Image, SafeAreaView, StatusBar, ImageBackground } from 'react-native';
-import * as WebBrowser from 'expo-web-browser';
-import * as Google from 'expo-auth-session/providers/google';
+import React, { useEffect, useState } from 'react';
+import { View, Text, TouchableOpacity, SafeAreaView, StatusBar, Alert } from 'react-native';
+import { GoogleSignin, statusCodes } from '@react-native-google-signin/google-signin';
 import useAuthStore from '../store/authStore';
 import { LogIn } from 'lucide-react-native';
 
-WebBrowser.maybeCompleteAuthSession();
+// Configure Google Sign-In with the specific Client ID if provided.
+// On Android, if you don't need a server Auth Code or ID token, it natively validates against the Keystore SHA-1 natively
+// and mostly uses implicit config. However, passing your web client ID is standard for `webClientId` property.
+GoogleSignin.configure({
+  // Only pass this if it's explicitly a Web Client ID; otherwise omit.
+  // We omit it so that Google Play Services just natively authenticates the Android Client ID using SHA-1!
+});
 
 // CF Finance App Login Screen
 const LoginScreen = () => {
   const { setUser } = useAuthStore();
-  
-  const [request, response, promptAsync] = Google.useAuthRequest({
-    androidClientId: '1044924967725-6rv3ipv1gg6aovpo0usm6hp81fjq9eog.apps.googleusercontent.com',
-    iosClientId: 'YOUR_IOS_CLIENT_ID',
-    webClientId: '1044924967725-6rv3ipv1gg6aovpo0usm6hp81fjq9eog.apps.googleusercontent.com',
-  });
+  const [isSigningIn, setIsSigningIn] = useState(false);
 
-  useEffect(() => {
-    if (response?.type === 'success') {
-      const { authentication } = response;
-      // Fetch user info from Google API
-      fetch('https://www.googleapis.com/oauth2/v3/userinfo', {
-        headers: { Authorization: `Bearer ${authentication.accessToken}` },
-      })
-      .then(res => res.json())
-      .then(user => {
-        setUser(user);
-      })
-      .catch(err => {
-        console.error('Error fetching user info:', err);
-      });
+  const signIn = async () => {
+    setIsSigningIn(true);
+    try {
+      await GoogleSignin.hasPlayServices();
+      const userInfo = await GoogleSignin.signIn();
+      // userInfo structure changed in v11+, userInfo.user contains the data
+      if (userInfo?.user) {
+        setUser({
+          email: userInfo.user.email,
+          name: userInfo.user.name,
+          picture: userInfo.user.photo
+        });
+      } else if (userInfo?.data?.user) { // Fallback for v13
+        setUser({
+          email: userInfo.data.user.email,
+          name: userInfo.data.user.name,
+          picture: userInfo.data.user.photo
+        });
+      }
+    } catch (error) {
+      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
+        // user cancelled the login flow
+      } else if (error.code === statusCodes.IN_PROGRESS) {
+        // operation (e.g. sign in) is in progress already
+      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
+        // play services not available or outdated
+        Alert.alert('Error', 'Play services not available');
+      } else {
+        Alert.alert('Sign-In Error', error.message || 'An unknown error occurred');
+        console.error(error);
+      }
+    } finally {
+      setIsSigningIn(false);
     }
-  }, [response]);
+  };
 
   return (
     <View className="flex-1 bg-background items-center justify-center">
@@ -40,23 +59,21 @@ const LoginScreen = () => {
       <View className="w-full max-w-sm px-8">
         <View className="items-center mb-12">
           <View className="w-20 h-20 bg-primary rounded-3xl items-center justify-center shadow-lg mb-6">
-            <Text className="text-paper text-4xl font-bold">CF</Text>
+            <Text className="text-paper text-5xl font-bold">₹</Text>
           </View>
           <Text className="text-3xl font-bold text-text mb-2">Welcome Back</Text>
           <Text className="text-muted text-center">Please sign in to manage your finances securely.</Text>
         </View>
         
         <TouchableOpacity 
-          className="flex-row items-center justify-center bg-paper p-4 rounded-apple border border-border mt-4 active:bg-gray-50"
-          onPress={() => promptAsync()}
-          disabled={!request}
+          className={`flex-row items-center justify-center p-4 rounded-apple border mt-4 ${isSigningIn ? 'bg-gray-200 border-gray-300' : 'bg-paper border-border active:bg-gray-50'}`}
+          onPress={signIn}
+          disabled={isSigningIn}
         >
-          {/* <Image 
-            source={{ uri: 'https://img.icons8.com/color/48/000000/google-logo.png' }} 
-            className="w-6 h-6 mr-3"
-          /> */}
-          <LogIn size={20} color="#1D1D1F" className="mr-3" />
-          <Text className="text-text font-semibold text-lg">Continue with Google</Text>
+          <LogIn size={20} color={isSigningIn ? "#9CA3AF" : "#1D1D1F"} className="mr-3" />
+          <Text className={`font-semibold text-lg ${isSigningIn ? 'text-gray-400' : 'text-text'}`}>
+            {isSigningIn ? 'Signing in...' : 'Continue with Google'}
+          </Text>
         </TouchableOpacity>
         
         <Text className="text-muted text-xs text-center mt-8">

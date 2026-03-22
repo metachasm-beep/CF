@@ -51,7 +51,7 @@ const HomeScreen = ({ navigation }) => {
               </View>
               <View>
                 <Text className="text-white/70 text-sm mb-1">Total Expenses</Text>
-                <Text className="text-white text-3xl font-bold">$8,350</Text>
+                <Text className="text-white text-3xl font-bold">₹8,350</Text>
               </View>
             </View>
             
@@ -104,7 +104,7 @@ const HomeScreen = ({ navigation }) => {
                   <Text className="text-muted text-sm">{tx.category}</Text>
                 </View>
                 <View className="items-end">
-                  <Text className="font-bold text-text text-lg mb-1">${tx.amount.toLocaleString()}</Text>
+                  <Text className="font-bold text-text text-lg mb-1">₹{tx.amount.toLocaleString()}</Text>
                   <Text className="text-muted text-xs">{tx.date}</Text>
                 </View>
               </View>
