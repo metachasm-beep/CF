@@ -12,10 +12,9 @@ const LoginScreen = () => {
   const { setUser } = useAuthStore();
   
   const [request, response, promptAsync] = Google.useAuthRequest({
-    // Provide placeholders for client IDs
-    androidClientId: 'YOUR_ANDROID_CLIENT_ID',
+    androidClientId: '1044924967725-6rv3ipv1gg6aovpo0usm6hp81fjq9eog.apps.googleusercontent.com',
     iosClientId: 'YOUR_IOS_CLIENT_ID',
-    webClientId: 'YOUR_WEB_CLIENT_ID',
+    webClientId: '1044924967725-6rv3ipv1gg6aovpo0usm6hp81fjq9eog.apps.googleusercontent.com',
   });
 
   useEffect(() => {

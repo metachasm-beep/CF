@@ -4,9 +4,7 @@ import axios from 'axios';
 
 const SPREADSHEET_ID = '17BmDP2w1T_NgadN2f751KpYEMquNQk7EdXHJegylE8k';
 
-// Recomended: Use a Google Apps Script (Web App) as a backend for personal spreadsheets
-// to avoid exposing Google API Keys or managing complex OAuth in client
-const API_URL = 'YOUR_GOOGLE_APPS_SCRIPT_URL'; 
+const API_URL = 'https://script.google.com/macros/s/AKfycbzCkN_J7ugWfEoUcjkO1ajTSQYspDd5gARsss9xOH4d3culb4hK-sbS7d2i1UfS5asY/exec'; 
 
 export const saveExpense = async (data) => {
   try {

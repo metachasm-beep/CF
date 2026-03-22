@@ -15,6 +15,7 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.metachasm.cf",
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/android-icon-foreground.png",
@@ -25,6 +26,11 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "scheme": "cf-app"
+    "scheme": "cf-app",
+    "extra": {
+      "eas": {
+        "projectId": "7de44bbc-93da-499b-b721-e20b352ca0ab"
+      }
+    }
   }
 }
