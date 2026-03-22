@@ -6,6 +6,8 @@ import AppNavigator from './src/navigation/AppNavigator';
 import useAuthStore from './src/store/authStore';
 import { StatusBar } from 'expo-status-bar';
 
+import { BottomSheetModalProvider } from '@gorhom/bottom-sheet';
+
 export default function App() {
   const { checkAuth } = useAuthStore();
 
@@ -15,10 +17,12 @@ export default function App() {
 
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <NavigationContainer>
-        <StatusBar style="auto" />
-        <AppNavigator />
-      </NavigationContainer>
+      <BottomSheetModalProvider>
+        <NavigationContainer>
+          <StatusBar style="auto" />
+          <AppNavigator />
+        </NavigationContainer>
+      </BottomSheetModalProvider>
     </GestureHandlerRootView>
   );
 }

@@ -5,6 +5,7 @@ import { FlashList } from '@shopify/flash-list';
 import { useFocusEffect } from '@react-navigation/native';
 import useAuthStore from '../store/authStore';
 import { syncOfflineExpenses, fetchExpenses } from '../services/api';
+import { MotiView } from 'moti';
 
 const HomeScreen = ({ navigation }) => {
   const { user, logout } = useAuthStore();
@@ -66,7 +67,12 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       {/* Summary Bento Grid */}
-      <View className="flex-row gap-4 mb-6">
+      <MotiView 
+        from={{ opacity: 0, translateY: 30 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ type: 'timing', duration: 400, delay: 100 }}
+        className="flex-row gap-4 mb-6"
+      >
         <TouchableOpacity 
           onPress={() => navigation.navigate('History')}
           className="flex-1 bg-primary p-5 rounded-3xl shadow-md min-h-[160px] justify-between active:bg-teal-800"
@@ -102,10 +108,15 @@ const HomeScreen = ({ navigation }) => {
             <Text className="text-text text-3xl font-bold">{activeProjectCount}</Text>
           </View>
         </TouchableOpacity>
-      </View>
+      </MotiView>
 
       {/* Quick Actions */}
-      <View className="flex-row gap-4 mb-8">
+      <MotiView 
+        from={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: 'spring', delay: 200, damping: 15 }}
+        className="flex-row gap-4 mb-8"
+      >
         <TouchableOpacity 
           className="flex-1 bg-paper p-4 rounded-apple border border-border items-center justify-center flex-row gap-2 active:bg-gray-50 shadow-sm"
           onPress={() => navigation.navigate('AddExpense')}
@@ -125,15 +136,20 @@ const HomeScreen = ({ navigation }) => {
           <Clock size={18} color="#1D1D1F" strokeWidth={2.5} />
           <Text className="font-semibold text-text">History</Text>
         </TouchableOpacity>
-      </View>
+      </MotiView>
 
       {/* Recent Transactions Section Label */}
-      <View className="mb-4 flex-row items-center justify-between">
+      <MotiView 
+        from={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ type: 'timing', duration: 300, delay: 350 }}
+        className="mb-4 flex-row items-center justify-between"
+      >
         <Text className="text-xl font-bold text-text">Recent Expenses</Text>
         <TouchableOpacity onPress={() => navigation.navigate('History')}>
           <Text className="text-primary font-semibold">See All</Text>
         </TouchableOpacity>
-      </View>
+      </MotiView>
     </>
   );
 

@@ -12,6 +12,7 @@ import AnimatedCheckmark from '../components/AnimatedCheckmark';
 import * as ImagePicker from 'expo-image-picker';
 import * as MediaLibrary from 'expo-media-library';
 import Carousel from 'react-native-reanimated-carousel';
+import { BottomSheetModal, BottomSheetBackdrop, BottomSheetView } from '@gorhom/bottom-sheet';
 
 const { width: PAGE_WIDTH, height: PAGE_HEIGHT } = Dimensions.get('window');
 
@@ -31,7 +32,18 @@ const AddExpenseScreen = ({ navigation }) => {
   const [imageModalVisible, setImageModalVisible] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
+  const bottomSheetModalRef = React.useRef(null);
+  const snapPoints = React.useMemo(() => ['50%'], []);
   const availableSubCategories = formData.category ? EXPENSE_CATEGORIES[formData.category] || [] : [];
+  
+  const handlePresentModalPress = (selector) => {
+    setActiveSelector(selector);
+    bottomSheetModalRef.current?.present();
+  };
+  
+  const handleCloseModal = () => {
+    bottomSheetModalRef.current?.dismiss();
+  };
   
   useEffect(() => {
     (async () => {
@@ -83,63 +95,52 @@ const AddExpenseScreen = ({ navigation }) => {
   };
 
   const renderSelectorModal = () => {
-    if (!activeSelector) return null;
-
     let options = [];
     let title = "";
-    let selectedValue = "";
-    let onSelect = (val) => {};
+    if (activeSelector === 'category') { options = Object.keys(EXPENSE_CATEGORIES); title = "Select Category"; }
+    else if (activeSelector === 'subCategory') { options = availableSubCategories; title = "Select Sub-Category"; }
+    else if (activeSelector === 'mode') { options = PAYMENT_MODES; title = "Payment Method"; }
 
-    if (activeSelector === 'category') {
-      options = Object.keys(EXPENSE_CATEGORIES);
-      title = "Select Category";
-      selectedValue = formData.category;
-      onSelect = (val) => setFormData({ ...formData, category: val, subCategory: '' });
-    } else if (activeSelector === 'subCategory') {
-      options = availableSubCategories;
-      title = "Select Head";
-      selectedValue = formData.subCategory;
-      onSelect = (val) => setFormData({ ...formData, subCategory: val });
-    } else if (activeSelector === 'mode') {
-      options = PAYMENT_MODES;
-      title = "Payment Mode";
-      selectedValue = formData.mode;
-      onSelect = (val) => setFormData({ ...formData, mode: val });
-    }
+    const renderBackdrop = React.useCallback(
+      props => (
+        <BottomSheetBackdrop {...props} disappearsOnIndex={-1} appearsOnIndex={0} opacity={0.5} />
+      ), []
+    );
 
     return (
-      <Modal visible={true} transparent={true} animationType="slide">
-        <View className="flex-1 justify-end bg-black/40">
-          <View className="bg-paper rounded-t-[32px] p-8 min-h-[400px] shadow-[0_-10px_40px_rgba(0,0,0,0.2)]">
-            <View className="flex-row justify-between items-center mb-6">
-              <Text className="text-xl font-bold text-text">{title}</Text>
-              <TouchableOpacity onPress={() => setActiveSelector(null)} className="p-2" accessibilityLabel="Close selector" accessibilityHint="Closes the selection modal">
-                <X size={24} color="#1D1D1F" />
+      <BottomSheetModal
+        ref={bottomSheetModalRef}
+        index={0}
+        snapPoints={snapPoints}
+        backdropComponent={renderBackdrop}
+        backgroundStyle={{ backgroundColor: '#FFFFFF', borderRadius: 24 }}
+        handleIndicatorStyle={{ backgroundColor: '#CCC', width: 40 }}
+      >
+        <BottomSheetView style={{ flex: 1, padding: 24 }}>
+          <Text className="text-xl font-bold text-text mb-6 text-center">{title}</Text>
+          <ScrollView showsVerticalScrollIndicator={false}>
+            {options.map((option, index) => (
+              <TouchableOpacity
+                key={index}
+                className="py-4 border-b border-gray-100 flex-row justify-between items-center"
+                onPress={() => {
+                  if (activeSelector === 'category') {
+                    setFormData(prev => ({ ...prev, category: option, subCategory: '' }));
+                  } else {
+                    setFormData(prev => ({ ...prev, [activeSelector]: option }));
+                  }
+                  handleCloseModal();
+                }}
+              >
+                <Text className="text-lg text-text font-medium">{option}</Text>
+                {formData[activeSelector] === option && (
+                  <Check size={20} color="#0F766E" strokeWidth={3} />
+                )}
               </TouchableOpacity>
-            </View>
-            
-            <ScrollView showsVerticalScrollIndicator={false}>
-              {options.map((option) => (
-                <TouchableOpacity 
-                  key={option} 
-                  className={`flex-row items-center justify-between p-5 rounded-apple mb-3 ${selectedValue === option ? 'bg-primary/10 border border-primary' : 'bg-background'}`}
-                  onPress={() => {
-                    onSelect(option);
-                    setActiveSelector(null);
-                  }}
-                  accessibilityLabel={`Select ${option}`}
-                >
-                  <Text className={`text-lg ${selectedValue === option ? 'text-primary font-bold' : 'text-text'}`}>
-                    {option}
-                  </Text>
-                  {selectedValue === option && <Check size={20} color="#0F766E" />}
-                </TouchableOpacity>
-              ))}
-              <View className="h-12" />
-            </ScrollView>
-          </View>
-        </View>
-      </Modal>
+            ))}
+          </ScrollView>
+        </BottomSheetView>
+      </BottomSheetModal>
     );
   };
 
@@ -249,7 +250,7 @@ const AddExpenseScreen = ({ navigation }) => {
                 <Text className="text-muted text-xs font-bold mb-3 uppercase tracking-widest ml-1">Main Category</Text>
                 <TouchableOpacity 
                   className="bg-paper p-5 rounded-apple border border-border flex-row items-center justify-between active:bg-gray-50 shadow-sm"
-                  onPress={() => setActiveSelector('category')}
+                  onPress={() => handlePresentModalPress('category')}
                   accessibilityLabel="Select Main Category"
                 >
                   <View className="flex-row items-center">
@@ -267,7 +268,7 @@ const AddExpenseScreen = ({ navigation }) => {
                 <Text className="text-muted text-xs font-bold mb-3 uppercase tracking-widest ml-1">Sub-Category / Head</Text>
                 <TouchableOpacity 
                   className={`bg-paper p-5 rounded-apple border border-border flex-row items-center justify-between active:bg-gray-50 shadow-sm ${!formData.category && 'opacity-50'}`}
-                  onPress={() => formData.category && setActiveSelector('subCategory')}
+                  onPress={() => formData.category && handlePresentModalPress('subCategory')}
                   disabled={!formData.category}
                   accessibilityLabel="Select Expense Sub-Category"
                 >
@@ -286,7 +287,7 @@ const AddExpenseScreen = ({ navigation }) => {
                 <Text className="text-muted text-xs font-bold mb-3 uppercase tracking-widest ml-1">Mode of Payment</Text>
                 <TouchableOpacity 
                   className="bg-paper p-5 rounded-apple border border-border flex-row items-center justify-between active:bg-gray-50 shadow-sm"
-                  onPress={() => setActiveSelector('mode')}
+                  onPress={() => handlePresentModalPress('mode')}
                   accessibilityLabel="Select Payment Mode"
                 >
                   <View className="flex-row items-center">
