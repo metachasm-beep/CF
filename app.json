@@ -1,5 +1,6 @@
 {
   "expo": {
+    "owner": "paullovessoccer",
     "name": "CF",
     "slug": "CF",
     "version": "1.0.0",
@@ -29,7 +30,7 @@
     "scheme": "cf-app",
     "extra": {
       "eas": {
-        "projectId": "7de44bbc-93da-499b-b721-e20b352ca0ab"
+        "projectId": "72ff99fc-79d5-47a6-bb74-33be725bce84"
       }
     },
     "plugins": [

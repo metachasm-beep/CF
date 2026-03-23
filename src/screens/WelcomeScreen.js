@@ -6,7 +6,6 @@ import { CommonActions } from '@react-navigation/native';
 const AnimatedTextWord = ({ word, index }) => {
   return (
     <Animated.Text 
-      entering={FadeInDown.delay(index * 200).springify().damping(12)}
       className="text-4xl font-black text-primary mx-1"
     >
       {word}
@@ -50,9 +49,9 @@ const WelcomeScreen = ({ navigation }) => {
     <SafeAreaView className="flex-1 bg-background items-center justify-center">
       <StatusBar barStyle="dark-content" />
       <Animated.View style={animatedStyle} className="items-center justify-center p-8 bg-paper rounded-[40px] shadow-2xl border border-primary/20 w-11/12">
-        <Animated.View entering={FadeIn.duration(1000)} className="w-24 h-24 bg-primary rounded-3xl items-center justify-center shadow-lg mb-8">
+        <View className="w-24 h-24 bg-primary rounded-3xl items-center justify-center shadow-lg mb-8">
           <Text className="text-paper text-6xl font-bold">₹</Text>
-        </Animated.View>
+        </View>
         <View className="flex-row flex-wrap justify-center">
           {words.map((word, index) => (
             <AnimatedTextWord key={`${index}-${word}`} word={word} index={index} />

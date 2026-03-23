@@ -67,10 +67,7 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       {/* Summary Bento Grid */}
-      <MotiView 
-        from={{ opacity: 0, translateY: 30 }}
-        animate={{ opacity: 1, translateY: 0 }}
-        transition={{ type: 'timing', duration: 400, delay: 100 }}
+      <View 
         className="flex-row gap-4 mb-6"
       >
         <TouchableOpacity 
@@ -108,13 +105,10 @@ const HomeScreen = ({ navigation }) => {
             <Text className="text-text text-3xl font-bold">{activeProjectCount}</Text>
           </View>
         </TouchableOpacity>
-      </MotiView>
+      </View>
 
       {/* Quick Actions */}
-      <MotiView 
-        from={{ opacity: 0, scale: 0.9 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ type: 'spring', delay: 200, damping: 15 }}
+      <View 
         className="flex-row gap-4 mb-8"
       >
         <TouchableOpacity 
@@ -136,20 +130,17 @@ const HomeScreen = ({ navigation }) => {
           <Clock size={18} color="#1D1D1F" strokeWidth={2.5} />
           <Text className="font-semibold text-text">History</Text>
         </TouchableOpacity>
-      </MotiView>
+      </View>
 
       {/* Recent Transactions Section Label */}
-      <MotiView 
-        from={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ type: 'timing', duration: 300, delay: 350 }}
+      <View 
         className="mb-4 flex-row items-center justify-between"
       >
         <Text className="text-xl font-bold text-text">Recent Expenses</Text>
         <TouchableOpacity onPress={() => navigation.navigate('History')}>
           <Text className="text-primary font-semibold">See All</Text>
         </TouchableOpacity>
-      </MotiView>
+      </View>
     </>
   );
 
