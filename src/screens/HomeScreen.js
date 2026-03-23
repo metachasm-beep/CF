@@ -67,7 +67,10 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       {/* Summary Bento Grid */}
-      <View 
+      <MotiView 
+        from={{ opacity: 0, translateY: 20 }}
+        animate={{ opacity: 1, translateY: 0 }}
+        transition={{ type: 'timing', duration: 1000 }}
         className="flex-row gap-4 mb-6"
       >
         <TouchableOpacity 
@@ -108,7 +111,10 @@ const HomeScreen = ({ navigation }) => {
       </View>
 
       {/* Quick Actions */}
-      <View 
+      <MotiView 
+        from={{ opacity: 0, scale: 0.9 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ type: 'timing', duration: 800, delay: 300 }}
         className="flex-row gap-4 mb-8"
       >
         <TouchableOpacity 
