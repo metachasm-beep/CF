@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import { View, Text, TouchableOpacity, SafeAreaView, StatusBar, Alert } from 'react-native';
+import { View, Text, TouchableOpacity, SafeAreaView, StatusBar, Alert, ActivityIndicator } from 'react-native';
 import { Plus, LogOut, ArrowUpRight, ArrowDownLeft, Clock, BarChart3, Receipt, Wallet } from 'lucide-react-native';
 import { FlashList } from '@shopify/flash-list';
 import { useFocusEffect } from '@react-navigation/native';
 import useAuthStore from '../store/authStore';
 import { syncOfflineExpenses, fetchExpenses } from '../services/api';
-import { MotiView } from 'moti';
+import { MotiView, AnimatePresence } from 'moti';
 
 const HomeScreen = ({ navigation }) => {
   const { user, logout } = useAuthStore();
