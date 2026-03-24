@@ -42,9 +42,13 @@ jobs:
 
       - name: Build Android Release
         run: |
+          echo "Current directory: $(pwd)"
+          ls -la
           cd android
-          sed -i 's/\r$//' gradlew
-          chmod +x gradlew
+          echo "Android directory: $(pwd)"
+          ls -la
+          sed -i 's/\r$//' gradlew || echo "sed failed"
+          chmod +x gradlew || echo "chmod failed"
           ./gradlew assembleRelease --no-daemon
 
       - name: Upload APK
