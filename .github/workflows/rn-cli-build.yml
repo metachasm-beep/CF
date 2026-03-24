@@ -38,7 +38,9 @@ jobs:
             ${{ runner.os }}-gradle-
 
       - name: Install Dependencies
-        run: npm install
+        run: |
+          npm install --legacy-peer-deps
+          ls -d node_modules/expo-modules-autolinking/android/expo-gradle-plugin || echo "Plugin dir missing!"
 
       - name: Build Android Release
         run: |
