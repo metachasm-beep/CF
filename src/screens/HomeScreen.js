@@ -108,7 +108,7 @@ const HomeScreen = ({ navigation }) => {
             <Text className="text-text text-3xl font-bold">{activeProjectCount}</Text>
           </View>
         </TouchableOpacity>
-      </View>
+      </MotiView>
 
       {/* Quick Actions */}
       <MotiView 
@@ -136,7 +136,7 @@ const HomeScreen = ({ navigation }) => {
           <Clock size={18} color="#1D1D1F" strokeWidth={2.5} />
           <Text className="font-semibold text-text">History</Text>
         </TouchableOpacity>
-      </View>
+      </MotiView>
 
       {/* Recent Transactions Section Label */}
       <View 

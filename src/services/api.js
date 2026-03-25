@@ -69,8 +69,7 @@ export const fetchExpenses = async () => {
     
     const data = [];
     for (let i = 1; i < lines.length; i++) {
-        // Handle basic commas inside quotes natively if PapaParse is absent
-        const row = lines[i];
+        const row = lines[i]?.trim();
         if (!row) continue;
         
         let inQuotes = false;
@@ -82,23 +81,26 @@ export const fetchExpenses = async () => {
             if (char === '"') {
                 inQuotes = !inQuotes;
             } else if (char === ',' && !inQuotes) {
-                values.push(cVal);
+                values.push(cVal.trim());
                 cVal = '';
             } else {
                 cVal += char;
             }
         }
-        values.push(cVal);
+        values.push(cVal.trim());
         
+        // Ensure we have at least amount and category
+        if (values.length < 2) continue;
+
         const expense = {
-          id: i.toString(),
-          date: values[0] || '',
-          amount: parseFloat((values[1] || '0').replace(/,/g, '')),
-          category: values[2] || '',
-          subCategory: values[3] || '',
-          mode: values[4] || '',
-          remarks: values[5] || '',
-          user: values[6] || ''
+          id: `${i}-${Date.now()}`,
+          date: values[0] || new Date().toLocaleDateString(),
+          amount: parseFloat((values[1] || '0').replace(/[^\d.-]/g, '')) || 0,
+          category: (values[2] || 'Uncategorized').replace(/"/g, ''),
+          subCategory: (values[3] || '').replace(/"/g, ''),
+          mode: (values[4] || 'Direct').replace(/"/g, ''),
+          remarks: (values[5] || '').replace(/"/g, ''),
+          user: (values[6] || '').replace(/"/g, '')
         };
         data.push(expense);
     }
