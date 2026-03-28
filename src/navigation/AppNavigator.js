@@ -6,6 +6,7 @@ import AddExpenseScreen from '../screens/AddExpenseScreen';
 import LoginScreen from '../screens/LoginScreen';
 import HistoryScreen from '../screens/HistoryScreen';
 import ProjectsScreen from '../screens/ProjectsScreen';
+import ExpenseDetailsScreen from '../screens/ExpenseDetailsScreen';
 import useAuthStore from '../store/authStore';
 
 const Stack = createNativeStackNavigator();
@@ -35,6 +36,7 @@ const AppNavigator = () => {
           />
           <Stack.Screen name="History" component={HistoryScreen} />
           <Stack.Screen name="Projects" component={ProjectsScreen} />
+          <Stack.Screen name="ExpenseDetails" component={ExpenseDetailsScreen} />
         </>
       ) : (
         <Stack.Screen name="Login" component={LoginScreen} />
@@ -43,4 +45,4 @@ const AppNavigator = () => {
   );
 };
 
-export default AppNavigator;
+export default AppNavigator; // Refreshed

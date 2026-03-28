@@ -1,0 +1,548 @@
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :expo
+
+Using expo modules
+  - [32mexpo-asset[0m (11.0.5)
+  - [32mexpo-constants[0m (17.0.8)
+  - [32mexpo-crypto[0m (14.0.2)
+  - [32mexpo-file-system[0m (18.0.12)
+  - [32mexpo-font[0m (13.0.4)
+  - [32mexpo-image-loader[0m (5.0.0)
+  - [32mexpo-image-picker[0m (16.0.6)
+  - [32mexpo-keep-awake[0m (14.0.3)
+  - [32mexpo-linear-gradient[0m (14.0.2)
+  - [32mexpo-linking[0m (7.0.5)
+  - [32mexpo-media-library[0m (17.0.6)
+  - [32mexpo-secure-store[0m (14.0.1)
+  - [32mexpo-web-browser[0m (14.0.2)
+
+
+> Configure project :react-native-reanimated
+Android gradle plugin: 8.7.2
+Gradle: 8.10.2
+
+> Configure project :shopify_react-native-skia
+react-native-skia: node_modules/ found at: F:\CF\CF\node_modules
+react-native-skia: RN Version: 76 / 0.76.9
+react-native-skia: isSourceBuild: false
+react-native-skia: PrebuiltDir: F:\CF\CF\node_modules\@shopify\react-native-skia\android\build/react-native-0*/jni
+react-native-skia: buildType: release
+react-native-skia: buildDir: F:\CF\CF\node_modules\@shopify\react-native-skia\android\build
+react-native-skia: node_modules: F:\CF\CF\node_modules
+react-native-skia: Enable Prefab: true
+react-native-skia: aar state post 70, do nothing
+
+> Task :app:buildKotlinToolingMetadata
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:generateAutolinkingPackageList
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:preBuild
+> Task :app:preReleaseBuild
+> Task :app:generateReleaseBuildConfig
+> Task :expo:generateExpoModulesPackageListTask
+> Task :expo:preBuild
+> Task :expo:preReleaseBuild
+> Task :expo-asset:preBuild UP-TO-DATE
+> Task :expo-asset:preReleaseBuild UP-TO-DATE
+> Task :expo:writeReleaseAarMetadata
+> Task :expo-asset:writeReleaseAarMetadata
+
+> Task :expo-constants:createExpoConfig
+The NODE_ENV environment variable is required but was not specified. Ensure the project is bundled with Expo CLI or NODE_ENV is set.
+Proceeding without mode-specific .env
+
+> Task :expo-constants:preBuild
+> Task :expo-constants:preReleaseBuild
+> Task :expo-crypto:preBuild UP-TO-DATE
+> Task :expo-crypto:preReleaseBuild UP-TO-DATE
+> Task :expo-constants:writeReleaseAarMetadata
+> Task :expo-file-system:preBuild UP-TO-DATE
+> Task :expo-file-system:preReleaseBuild UP-TO-DATE
+> Task :expo-crypto:writeReleaseAarMetadata
+> Task :expo-font:preBuild UP-TO-DATE
+> Task :expo-font:preReleaseBuild UP-TO-DATE
+> Task :expo-file-system:writeReleaseAarMetadata
+> Task :expo-image-loader:preBuild UP-TO-DATE
+> Task :expo-image-loader:preReleaseBuild UP-TO-DATE
+> Task :expo-font:writeReleaseAarMetadata
+> Task :expo-image-picker:preBuild UP-TO-DATE
+> Task :expo-image-picker:preReleaseBuild UP-TO-DATE
+> Task :expo-image-loader:writeReleaseAarMetadata
+> Task :expo-keep-awake:preBuild UP-TO-DATE
+> Task :expo-keep-awake:preReleaseBuild UP-TO-DATE
+> Task :expo-image-picker:writeReleaseAarMetadata
+> Task :expo-linear-gradient:preBuild UP-TO-DATE
+> Task :expo-linear-gradient:preReleaseBuild UP-TO-DATE
+> Task :expo-keep-awake:writeReleaseAarMetadata
+> Task :expo-linking:preBuild UP-TO-DATE
+> Task :expo-linking:preReleaseBuild UP-TO-DATE
+> Task :expo-linear-gradient:writeReleaseAarMetadata
+> Task :expo-media-library:preBuild UP-TO-DATE
+> Task :expo-media-library:preReleaseBuild UP-TO-DATE
+> Task :expo-linking:writeReleaseAarMetadata
+> Task :expo-modules-core:preBuild UP-TO-DATE
+> Task :expo-modules-core:preReleaseBuild UP-TO-DATE
+> Task :expo-media-library:writeReleaseAarMetadata
+> Task :expo-secure-store:preBuild UP-TO-DATE
+> Task :expo-secure-store:preReleaseBuild UP-TO-DATE
+> Task :expo-modules-core:writeReleaseAarMetadata
+> Task :expo-web-browser:preBuild UP-TO-DATE
+> Task :expo-web-browser:preReleaseBuild UP-TO-DATE
+> Task :expo-secure-store:writeReleaseAarMetadata
+> Task :lottie-react-native:preBuild UP-TO-DATE
+> Task :lottie-react-native:preReleaseBuild UP-TO-DATE
+> Task :expo-web-browser:writeReleaseAarMetadata
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preReleaseBuild UP-TO-DATE
+> Task :lottie-react-native:writeReleaseAarMetadata
+> Task :react-native-gesture-handler:preBuild UP-TO-DATE
+> Task :react-native-gesture-handler:preReleaseBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:writeReleaseAarMetadata
+> Task :react-native-google-signin_google-signin:preBuild UP-TO-DATE
+> Task :react-native-google-signin_google-signin:preReleaseBuild UP-TO-DATE
+> Task :react-native-gesture-handler:writeReleaseAarMetadata
+> Task :react-native-picker_picker:preBuild UP-TO-DATE
+> Task :react-native-picker_picker:preReleaseBuild UP-TO-DATE
+> Task :react-native-google-signin_google-signin:writeReleaseAarMetadata
+> Task :react-native-reanimated:assertLatestReactNativeWithNewArchitectureTask SKIPPED
+> Task :react-native-reanimated:assertMinimalReactNativeVersionTask SKIPPED
+> Task :react-native-picker_picker:writeReleaseAarMetadata
+> Task :react-native-reanimated:prepareReanimatedHeadersForPrefabs
+> Task :react-native-reanimated:prepareWorkletsHeadersForPrefabs
+> Task :react-native-reanimated:preBuild
+> Task :react-native-reanimated:preReleaseBuild
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+> Task :react-native-reanimated:writeReleaseAarMetadata
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:writeReleaseAarMetadata
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+> Task :react-native-svg:preBuild UP-TO-DATE
+> Task :react-native-svg:preReleaseBuild UP-TO-DATE
+> Task :react-native-screens:writeReleaseAarMetadata
+> Task :react-native-svg:writeReleaseAarMetadata
+> Task :react-native-worklets-core:prepareHeaders
+> Task :react-native-worklets-core:preBuild
+> Task :react-native-worklets-core:preReleaseBuild
+> Task :shopify_flash-list:preBuild UP-TO-DATE
+> Task :shopify_flash-list:preReleaseBuild UP-TO-DATE
+> Task :react-native-worklets-core:writeReleaseAarMetadata
+> Task :shopify_flash-list:writeReleaseAarMetadata
+> Task :shopify_react-native-skia:prepareHeaders
+> Task :shopify_react-native-skia:preBuild
+> Task :shopify_react-native-skia:preReleaseBuild
+> Task :shopify_react-native-skia:writeReleaseAarMetadata
+> Task :app:createBundleReleaseJsAndAssets
+Starting Metro Bundler
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+Android Bundled 32889ms index.js (3409 modules)
+Writing bundle output to: android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle
+Writing sourcemap output to: android\app\build\intermediates\sourcemaps\react\release\index.android.bundle.packager.map
+Copying 19 asset files
+Done writing bundle output
+Done writing sourcemap output
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:3976:16: warning: the variable "SharedArrayBuffer" was not declared in function "from"
+    if (typeof SharedArrayBuffer !== 'undefined' && (isInstance(value, Shared...
+               ^~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:7864:23: warning: the variable "DebuggerInternal" was not declared in function "__shouldPauseOnThrow"
+        return typeof DebuggerInternal !== 'undefined' && DebuggerInternal.sh...
+                      ^~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:18219:7: warning: the variable "setTimeout" was not declared in function "logCapturedError"
+      setTimeout(function () {
+      ^~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:16453:31: warning: the variable "nativeFabricUIManager" was not declared in anonymous function " 391#"
+  var _nativeFabricUIManage = nativeFabricUIManager,
+                              ^~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:16481:21: warning: the variable "clearTimeout" was not declared in anonymous function " 391#"
+    cancelTimeout = clearTimeout;
+                    ^~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:16494:51: warning: the variable "RN$enableMicrotasksInReact" was not declared in anonymous function " 391#"
+... "undefined" !== typeof RN$enableMicrotasksInReact && !!RN$enableMicrotask...
+                           ^~~~~~~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:16495:47: warning: the variable "queueMicrotask" was not declared in anonymous function " 391#"
+...otask = "function" === typeof queueMicrotask ? queueMicrotask : scheduleTi...
+                                 ^~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:20916:30: warning: the variable "__REACT_DEVTOOLS_GLOBAL_HOOK__" was not declared in anonymous function " 391#"
+  if ("undefined" !== typeof __REACT_DEVTOOLS_GLOBAL_HOOK__) {
+                             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:22350:5: warning: the variable "setImmediate" was not declared in function "handleResolved"
+    setImmediate(function () {
+    ^~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25616:5: warning: the variable "fetch" was not declared in anonymous function " 614#"
+    fetch,
+    ^~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25617:5: warning: the variable "Headers" was not declared in anonymous function " 614#"
+    Headers,
+    ^~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25618:5: warning: the variable "Request" was not declared in anonymous function " 614#"
+    Request,
+    ^~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25619:5: warning: the variable "Response" was not declared in anonymous function " 614#"
+    Response
+    ^~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25776:24: warning: the variable "FileReader" was not declared in function "readBlobAsArrayBuffer"
+      var reader = new FileReader();
+                       ^~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25831:44: warning: the variable "URLSearchParams" was not declared in anonymous function " 625#"
+...e if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body...
+                                 ^~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25950:26: warning: the variable "AbortController" was not declared in anonymous function " 631#"
+          var ctrl = new AbortController();
+                         ^~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:26084:23: warning: the variable "XMLHttpRequest" was not declared in anonymous function " 635#"
+        var xhr = new XMLHttpRequest();
+                      ^~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:25629:71: warning: the variable "self" was not declared in anonymous function " 617#"
+...undefined' && globalThis || typeof self !== 'undefined' && self ||
+                                      ^~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:32319:11: warning: the variable "_WORKLET" was not declared in function "assertEasingIsWorklet"
+      if (_WORKLET) {
+          ^~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:34102:94: warning: the variable "location" was not declared in function "registerSensor 1#"
+...(0, _PlatformChecker.isWeb)() && location.protocol !== 'https:' ? ' Make s...
+                                    ^~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:34182:25: warning: the variable "navigator" was not declared in function "detectPlatform"
+        var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+                        ^~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:34564:12: warning: the variable "__reanimatedLoggerConfig" was not declared in function "replaceLoggerImplementation"
+        ...__reanimatedLoggerConfig,
+           ^~~~~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:35165:26: warning: Direct call to eval(), but lexical scope is not supported.
+            workletFun = eval('(' + initData.code + '\n)');
+                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:35188:112: warning: the variable "_toString" was not declared in function "valueUnpacker"
+...recognized by value unpacker: "${_toString(objectToUnpack)}".`);
+                                    ^~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:40992:37: warning: the variable "MessageChannel" was not declared in anonymous function " 1010#"
+  };else if ("undefined" !== typeof MessageChannel) {
+                                    ^~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:41007:34: warning: the variable "nativeRuntimeScheduler" was not declared in anonymous function " 1010#"
+... = "undefined" !== typeof nativeRuntimeScheduler ? nativeRuntimeScheduler....
+                             ^~~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:42597:13: warning: the variable "requestAnimationFrame" was not declared in arrow function "step"
+            requestAnimationFrame(step);
+            ^~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:57897:26: warning: the variable "structuredClone" was not declared in function "createAnimationWithInitialValues"
+    var animationStyle = structuredClone(_config.AnimationsData[animationName...
+                         ^~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:58217:5: warning: the variable "document" was not declared in function "configureWebLayoutAnimations"
+    document.getElementById(PREDEFINED_WEB_ANIMATIONS_ID) !== null) {
+    ^~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:58312:27: warning: the variable "HTMLElement" was not declared in function "findDescendantWithExitingAnimation"
+    if (!(node instanceof HTMLElement)) {
+                          ^~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:58338:24: warning: the variable "MutationObserver" was not declared in function "addHTMLMutationObserver"
+    var observer = new MutationObserver(mutationsList => {
+                       ^~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:58383:41: warning: the variable "getComputedStyle" was not declared in function "fixElementPosition"
+...entBorderTopValue = parseInt(getComputedStyle(parent).borderTopWidth);
+                                ^~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:62354:5: warning: the variable "jest" was not declared in arrow function "beforeTest"
+    jest.useFakeTimers();
+    ^~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:62930:26: warning: the variable "_getAnimationTimestamp" was not declared in function "computeEasingProgress"
+      var elapsedTime = (_getAnimationTimestamp() - startingTimestamp) / 1000;
+                         ^~~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:88479:16: warning: the variable "PointerEvent" was not declared in function "isMouseEvent"
+    if (typeof PointerEvent !== "undefined" && event instanceof PointerEvent) {
+               ^~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:88482:29: warning: the variable "MouseEvent" was not declared in function "isMouseEvent"
+    return event instanceof MouseEvent;
+                            ^~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:88781:32: warning: the variable "IntersectionObserver" was not declared in function "initIntersectionObserver"
+...  rootObservers[key] = new IntersectionObserver(fireAllObserverCallbacks, ...
+                              ^~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:92077:30: warning: the variable "Element" was not declared in function "resolveCSSVariables"
+    if (!(element instanceof Element)) return {
+                             ^~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:93237:42: warning: the variable "SVGElement" was not declared in anonymous function " 2915#"
+...his.isSVG = instance instanceof SVGElement && instance.tagName !== "svg";
+                                   ^~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:98779:7: warning: the variable "CSS" was not declared in function "registerCssVariable"
+      CSS.registerProperty({
+      ^~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:99263:11: warning: the variable "cancelAnimationFrame" was not declared in function "stop 20#"
+          cancelAnimationFrame(this.frameRequestId);
+          ^~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:99841:27: warning: the variable "length" was not declared in function "createAnimationsFromTimeline"
+          var remainder = length - valueKeyframes.length;
+                          ^~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:101084:16: warning: the variable "ResizeObserver" was not declared in function "createResizeObserver"
+    if (typeof ResizeObserver === "undefined") return;
+               ^~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:101443:37: warning: the variable "SVGGraphicsElement" was not declared in function "calcInset"
+...else if (current instanceof SVGGraphicsElement && "getBBox" in current) {
+                               ^~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:101873:31: warning: the variable "CustomEvent" was not declared in function "dispatchPointerEvent"
+    element.dispatchEvent(new CustomEvent(name, {
+                              ^~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:215748:34: warning: the variable "WeakRef" was not declared in anonymous arrow function " 6312#"
+        setConsumedParamsRef(new WeakRef(route.params));
+                                 ^~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:217494:9: warning: the variable "REACT_NAVIGATION_DEVTOOLS" was not declared in anonymous arrow function " 6437#"
+        REACT_NAVIGATION_DEVTOOLS.set(refContainer.current, {
+        ^~~~~~~~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:229668:16: warning: the variable "requestIdleCallback" was not declared in anonymous arrow function " 6941#"
+      var id = requestIdleCallback(() => {
+               ^~~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:229671:20: warning: the variable "cancelIdleCallback" was not declared in anonymous arrow function " 6943#"
+      return () => cancelIdleCallback(id);
+                   ^~~~~~~~~~~~~~~~~~
+android\app\build\generated\assets\createBundleReleaseJsAndAssets\index.android.bundle:234561:76: warning: the variable "Buffer" was not declared in function "convertValue"
+... 'function' ? new Blob([value]) : Buffer.from(value);
+                                     ^~~~~~
+
+> Task :app:generateReleaseResValues
+> Task :expo:generateReleaseResValues
+> Task :expo:generateReleaseResources
+> Task :expo:packageReleaseResources
+> Task :expo-asset:generateReleaseResValues
+> Task :expo-asset:generateReleaseResources
+> Task :expo-asset:packageReleaseResources
+> Task :expo-constants:generateReleaseResValues
+> Task :expo-constants:generateReleaseResources
+> Task :expo-constants:packageReleaseResources
+> Task :expo-crypto:generateReleaseResValues
+> Task :expo-crypto:generateReleaseResources
+> Task :expo-crypto:packageReleaseResources
+> Task :expo-file-system:generateReleaseResValues
+> Task :expo-file-system:generateReleaseResources
+> Task :expo-file-system:packageReleaseResources
+> Task :expo-font:generateReleaseResValues
+> Task :expo-font:generateReleaseResources
+> Task :expo-font:packageReleaseResources
+> Task :expo-image-loader:generateReleaseResValues
+> Task :expo-image-loader:generateReleaseResources
+> Task :expo-image-loader:packageReleaseResources
+> Task :expo-image-picker:generateReleaseResValues
+> Task :expo-image-picker:generateReleaseResources
+> Task :expo-image-picker:packageReleaseResources
+> Task :expo-keep-awake:generateReleaseResValues
+> Task :expo-keep-awake:generateReleaseResources
+> Task :expo-keep-awake:packageReleaseResources
+> Task :expo-linear-gradient:generateReleaseResValues
+> Task :expo-linear-gradient:generateReleaseResources
+> Task :expo-linear-gradient:packageReleaseResources
+> Task :expo-linking:generateReleaseResValues
+> Task :expo-linking:generateReleaseResources
+> Task :app:checkReleaseAarMetadata
+> Task :expo-linking:packageReleaseResources
+> Task :expo-media-library:generateReleaseResValues
+> Task :expo-media-library:generateReleaseResources
+> Task :expo-media-library:packageReleaseResources
+> Task :expo-modules-core:generateReleaseResValues
+> Task :expo-modules-core:generateReleaseResources
+> Task :expo-modules-core:packageReleaseResources
+> Task :expo-secure-store:generateReleaseResValues
+> Task :expo-secure-store:generateReleaseResources
+> Task :expo-secure-store:packageReleaseResources
+> Task :expo-web-browser:generateReleaseResValues
+> Task :expo-web-browser:generateReleaseResources
+> Task :expo-web-browser:packageReleaseResources
+> Task :lottie-react-native:generateReleaseResValues
+> Task :lottie-react-native:generateReleaseResources
+> Task :lottie-react-native:packageReleaseResources
+> Task :react-native-async-storage_async-storage:generateReleaseResValues
+> Task :react-native-async-storage_async-storage:generateReleaseResources
+> Task :react-native-async-storage_async-storage:packageReleaseResources
+> Task :react-native-gesture-handler:generateReleaseResValues
+> Task :react-native-gesture-handler:generateReleaseResources
+> Task :react-native-gesture-handler:packageReleaseResources
+> Task :react-native-google-signin_google-signin:generateReleaseResValues
+> Task :react-native-google-signin_google-signin:generateReleaseResources
+> Task :react-native-google-signin_google-signin:packageReleaseResources
+> Task :react-native-picker_picker:generateReleaseResValues
+> Task :react-native-picker_picker:generateReleaseResources
+> Task :react-native-picker_picker:packageReleaseResources
+> Task :react-native-reanimated:generateReleaseResValues
+> Task :react-native-reanimated:generateReleaseResources
+> Task :react-native-reanimated:packageReleaseResources
+> Task :react-native-safe-area-context:generateReleaseResValues
+> Task :react-native-safe-area-context:generateReleaseResources
+> Task :react-native-safe-area-context:packageReleaseResources
+> Task :react-native-screens:generateReleaseResValues
+> Task :react-native-screens:generateReleaseResources
+> Task :react-native-screens:packageReleaseResources
+> Task :react-native-svg:generateReleaseResValues
+> Task :react-native-svg:generateReleaseResources
+> Task :react-native-svg:packageReleaseResources
+> Task :react-native-worklets-core:generateReleaseResValues
+> Task :react-native-worklets-core:generateReleaseResources
+> Task :react-native-worklets-core:packageReleaseResources
+> Task :shopify_flash-list:generateReleaseResValues
+> Task :shopify_flash-list:generateReleaseResources
+> Task :shopify_flash-list:packageReleaseResources
+> Task :shopify_react-native-skia:generateReleaseResValues
+> Task :shopify_react-native-skia:generateReleaseResources
+> Task :shopify_react-native-skia:packageReleaseResources
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:generateReleaseResources
+> Task :app:packageReleaseResources
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :expo:extractDeepLinksRelease
+> Task :app:parseReleaseLocalResources
+> Task :expo-asset:extractDeepLinksRelease
+> Task :expo:processReleaseManifest
+> Task :expo-constants:extractDeepLinksRelease
+> Task :expo-asset:processReleaseManifest
+> Task :expo-constants:processReleaseManifest
+> Task :expo-crypto:extractDeepLinksRelease
+> Task :expo-crypto:processReleaseManifest
+> Task :expo-file-system:extractDeepLinksRelease
+> Task :expo-font:extractDeepLinksRelease
+> Task :expo-image-loader:extractDeepLinksRelease
+> Task :expo-font:processReleaseManifest
+
+> Task :expo-file-system:processReleaseManifest
+F:\CF\CF\node_modules\expo-file-system\android\src\main\AndroidManifest.xml:6:9-8:20 Warning:
+	provider#expo.modules.filesystem.FileSystemFileProvider@android:authorities was tagged at AndroidManifest.xml:6 to replace other declarations but no other declaration present
+
+> Task :expo-image-picker:extractDeepLinksRelease
+> Task :expo-image-loader:processReleaseManifest
+> Task :expo-keep-awake:extractDeepLinksRelease
+> Task :expo-linear-gradient:extractDeepLinksRelease
+> Task :expo-keep-awake:processReleaseManifest
+> Task :expo-linking:extractDeepLinksRelease
+> Task :expo-linear-gradient:processReleaseManifest
+> Task :expo-media-library:extractDeepLinksRelease
+> Task :expo-image-picker:processReleaseManifest
+> Task :expo-linking:processReleaseManifest
+> Task :expo-modules-core:extractDeepLinksRelease
+> Task :expo-media-library:processReleaseManifest
+> Task :expo-secure-store:extractDeepLinksRelease
+
+> Task :expo-modules-core:processReleaseManifest
+F:\CF\CF\node_modules\expo\node_modules\expo-modules-core\android\src\main\AndroidManifest.xml:8:9-11:45 Warning:
+	meta-data#com.facebook.soloader.enabled@android:value was tagged at AndroidManifest.xml:8 to replace other declarations but no other declaration present
+
+> Task :expo-web-browser:extractDeepLinksRelease
+> Task :expo-secure-store:processReleaseManifest
+> Task :lottie-react-native:extractDeepLinksRelease
+> Task :expo-web-browser:processReleaseManifest
+> Task :react-native-async-storage_async-storage:extractDeepLinksRelease
+> Task :lottie-react-native:processReleaseManifest
+> Task :react-native-gesture-handler:extractDeepLinksRelease
+
+> Task :react-native-async-storage_async-storage:processReleaseManifest
+package="com.reactnativecommunity.asyncstorage" found in source AndroidManifest.xml: F:\CF\CF\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativecommunity.asyncstorage" from the source AndroidManifest.xml: F:\CF\CF\node_modules\@react-native-async-storage\async-storage\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-google-signin_google-signin:extractDeepLinksRelease
+> Task :react-native-gesture-handler:processReleaseManifest
+> Task :react-native-picker_picker:extractDeepLinksRelease
+
+> Task :react-native-google-signin_google-signin:processReleaseManifest
+package="com.reactnativegooglesignin" found in source AndroidManifest.xml: F:\CF\CF\node_modules\@react-native-google-signin\google-signin\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativegooglesignin" from the source AndroidManifest.xml: F:\CF\CF\node_modules\@react-native-google-signin\google-signin\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-reanimated:extractDeepLinksRelease
+
+> Task :react-native-picker_picker:processReleaseManifest
+package="com.reactnativecommunity.picker" found in source AndroidManifest.xml: F:\CF\CF\node_modules\@react-native-picker\picker\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.reactnativecommunity.picker" from the source AndroidManifest.xml: F:\CF\CF\node_modules\@react-native-picker\picker\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-safe-area-context:extractDeepLinksRelease
+> Task :react-native-reanimated:processReleaseManifest
+> Task :react-native-screens:extractDeepLinksRelease
+
+> Task :react-native-safe-area-context:processReleaseManifest
+package="com.th3rdwave.safeareacontext" found in source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.th3rdwave.safeareacontext" from the source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-safe-area-context\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-svg:extractDeepLinksRelease
+
+> Task :react-native-screens:processReleaseManifest
+package="com.swmansion.rnscreens" found in source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-screens\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.swmansion.rnscreens" from the source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-screens\android\src\main\AndroidManifest.xml.
+
+> Task :react-native-worklets-core:extractDeepLinksRelease
+
+> Task :react-native-svg:processReleaseManifest
+package="com.horcrux.svg" found in source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-svg\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.horcrux.svg" from the source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-svg\android\src\main\AndroidManifest.xml.
+
+> Task :shopify_flash-list:extractDeepLinksRelease
+
+> Task :react-native-worklets-core:processReleaseManifest
+package="com.worklets" found in source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-worklets-core\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.worklets" from the source AndroidManifest.xml: F:\CF\CF\node_modules\react-native-worklets-core\android\src\main\AndroidManifest.xml.
+
+> Task :shopify_react-native-skia:extractDeepLinksRelease
+
+> Task :shopify_flash-list:processReleaseManifest
+package="com.shopify.reactnative.flash_list" found in source AndroidManifest.xml: F:\CF\CF\node_modules\@shopify\flash-list\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.shopify.reactnative.flash_list" from the source AndroidManifest.xml: F:\CF\CF\node_modules\@shopify\flash-list\android\src\main\AndroidManifest.xml.
+
+> Task :shopify_react-native-skia:processReleaseManifest
+package="com.shopify.reactnative.skia" found in source AndroidManifest.xml: F:\CF\CF\node_modules\@shopify\react-native-skia\android\src\main\AndroidManifest.xml.
+Setting the namespace via the package attribute in the source AndroidManifest.xml is no longer supported, and the value is ignored.
+Recommendation: remove package="com.shopify.reactnative.skia" from the source AndroidManifest.xml: F:\CF\CF\node_modules\@shopify\react-native-skia\android\src\main\AndroidManifest.xml.
+
+> Task :expo:compileReleaseLibraryResources
+> Task :expo:parseReleaseLocalResources
+
+> Task :app:processReleaseMainManifest FAILED
+F:\CF\CF\android\app\src\main\AndroidManifest.xml Error:
+	uses-sdk:minSdkVersion 21 cannot be smaller than version 24 declared in library [com.facebook.react:react-android:0.76.9] C:\Users\PAUL\.gradle\caches\8.10.2\transforms\3dc72aa937c39ebbb86d544a7ac28a7b\transformed\react-android-0.76.9-release\AndroidManifest.xml as the library might be using APIs not available in 21
+	Suggestion: use a compatible library with a minSdk of at most 21,
+		or increase this project's minSdk version to at least 24,
+		or use tools:overrideLibrary="com.facebook.react" to force usage (may lead to runtime failures)
+
+See https://developer.android.com/r/studio-ui/build/manifest-merger for more information about the manifest merger.
+
+
+> Task :app:mergeReleaseResources
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:processReleaseMainManifest'.
+> Manifest merger failed : uses-sdk:minSdkVersion 21 cannot be smaller than version 24 declared in library [com.facebook.react:react-android:0.76.9] C:\Users\PAUL\.gradle\caches\8.10.2\transforms\3dc72aa937c39ebbb86d544a7ac28a7b\transformed\react-android-0.76.9-release\AndroidManifest.xml as the library might be using APIs not available in 21
+  	Suggestion: use a compatible library with a minSdk of at most 21,
+  		or increase this project's minSdk version to at least 24,
+  		or use tools:overrideLibrary="com.facebook.react" to force usage (may lead to runtime failures)
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+
+BUILD FAILED in 6m 5s
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+198 actionable tasks: 188 executed, 10 up-to-date

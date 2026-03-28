@@ -1,0 +1,276 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :gradle-plugin:settings-plugin:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle-plugin:shared:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle-plugin:shared:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:shared:compileJava NO-SOURCE
+> Task :gradle-plugin:shared:processResources NO-SOURCE
+> Task :gradle-plugin:shared:classes UP-TO-DATE
+> Task :gradle-plugin:shared:jar UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:settings-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:settings-plugin:jar UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:checkKotlinGradlePluginConfigurationErrors
+> Task :gradle-plugin:react-native-gradle-plugin:compileKotlin UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:compileJava NO-SOURCE
+> Task :gradle-plugin:react-native-gradle-plugin:pluginDescriptors UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:processResources UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:classes UP-TO-DATE
+> Task :gradle-plugin:react-native-gradle-plugin:jar UP-TO-DATE
+
+> Configure project :expo
+
+Using expo modules
+  - [32mexpo-application[0m (6.0.2)
+  - [32mexpo-asset[0m (11.0.5)
+  - [32mexpo-constants[0m (17.0.8)
+  - [32mexpo-crypto[0m (14.0.2)
+  - [32mexpo-file-system[0m (18.0.12)
+  - [32mexpo-font[0m (13.0.4)
+  - [32mexpo-image-loader[0m (5.0.0)
+  - [32mexpo-image-picker[0m (16.0.6)
+  - [32mexpo-keep-awake[0m (14.0.3)
+  - [32mexpo-linear-gradient[0m (14.0.2)
+  - [32mexpo-linking[0m (7.0.5)
+  - [32mexpo-media-library[0m (17.0.6)
+  - [32mexpo-modules-core[0m (2.2.3)
+  - [32mexpo-secure-store[0m (14.0.1)
+  - [32mexpo-web-browser[0m (14.0.2)
+
+
+> Configure project :react-native-reanimated
+Android gradle plugin: 8.7.2
+Gradle: 8.10.2
+
+> Configure project :shopify_react-native-skia
+react-native-skia: node_modules/ found at: F:\CF\CF\node_modules
+react-native-skia: RN Version: 76 / 0.76.9
+react-native-skia: isSourceBuild: false
+react-native-skia: PrebuiltDir: F:\CF\CF\node_modules\@shopify\react-native-skia\android\build/react-native-0*/jni
+react-native-skia: buildType: release
+react-native-skia: buildDir: F:\CF\CF\node_modules\@shopify\react-native-skia\android\build
+react-native-skia: node_modules: F:\CF\CF\node_modules
+react-native-skia: Enable Prefab: true
+react-native-skia: aar state post 70, do nothing
+
+> Task :app:buildKotlinToolingMetadata UP-TO-DATE
+> Task :app:checkKotlinGradlePluginConfigurationErrors
+> Task :app:generateAutolinkingPackageList UP-TO-DATE
+> Task :app:generateCodegenSchemaFromJavaScript SKIPPED
+> Task :app:generateCodegenArtifactsFromSchema SKIPPED
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:generateReleaseBuildConfig UP-TO-DATE
+> Task :expo:generateExpoModulesPackageListTask UP-TO-DATE
+> Task :expo:preBuild UP-TO-DATE
+> Task :expo:preReleaseBuild UP-TO-DATE
+> Task :expo:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-application:preBuild UP-TO-DATE
+> Task :expo-application:preReleaseBuild UP-TO-DATE
+> Task :expo-application:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-asset:preBuild UP-TO-DATE
+> Task :expo-asset:preReleaseBuild UP-TO-DATE
+> Task :expo-asset:writeReleaseAarMetadata UP-TO-DATE
+
+> Task :expo-constants:createExpoConfig
+
+> Task :expo-constants:preBuild
+> Task :expo-constants:preReleaseBuild
+The NODE_ENV environment variable is required but was not specified. Ensure the project is bundled with Expo CLI or NODE_ENV is set.
+Proceeding without mode-specific .env
+> Task :expo-constants:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-crypto:preBuild UP-TO-DATE
+> Task :expo-crypto:preReleaseBuild UP-TO-DATE
+> Task :expo-crypto:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-file-system:preBuild UP-TO-DATE
+> Task :expo-file-system:preReleaseBuild UP-TO-DATE
+> Task :expo-file-system:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-font:preBuild UP-TO-DATE
+> Task :expo-font:preReleaseBuild UP-TO-DATE
+> Task :expo-font:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-image-loader:preBuild UP-TO-DATE
+> Task :expo-image-loader:preReleaseBuild UP-TO-DATE
+> Task :expo-image-loader:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-image-picker:preBuild UP-TO-DATE
+> Task :expo-image-picker:preReleaseBuild UP-TO-DATE
+> Task :expo-image-picker:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-keep-awake:preBuild UP-TO-DATE
+> Task :expo-keep-awake:preReleaseBuild UP-TO-DATE
+> Task :expo-keep-awake:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-linear-gradient:preBuild UP-TO-DATE
+> Task :expo-linear-gradient:preReleaseBuild UP-TO-DATE
+> Task :expo-linear-gradient:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-linking:preBuild UP-TO-DATE
+> Task :expo-linking:preReleaseBuild UP-TO-DATE
+> Task :expo-linking:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-media-library:preBuild UP-TO-DATE
+> Task :expo-media-library:preReleaseBuild UP-TO-DATE
+> Task :expo-media-library:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-modules-core:preBuild UP-TO-DATE
+> Task :expo-modules-core:preReleaseBuild UP-TO-DATE
+> Task :expo-modules-core:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-secure-store:preBuild UP-TO-DATE
+> Task :expo-secure-store:preReleaseBuild UP-TO-DATE
+> Task :expo-secure-store:writeReleaseAarMetadata UP-TO-DATE
+> Task :expo-web-browser:preBuild UP-TO-DATE
+> Task :expo-web-browser:preReleaseBuild UP-TO-DATE
+> Task :expo-web-browser:writeReleaseAarMetadata UP-TO-DATE
+> Task :lottie-react-native:preBuild UP-TO-DATE
+> Task :lottie-react-native:preReleaseBuild UP-TO-DATE
+> Task :lottie-react-native:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:preReleaseBuild UP-TO-DATE
+> Task :react-native-async-storage_async-storage:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-gesture-handler:preBuild UP-TO-DATE
+> Task :react-native-gesture-handler:preReleaseBuild UP-TO-DATE
+> Task :react-native-gesture-handler:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-google-signin_google-signin:preBuild UP-TO-DATE
+> Task :react-native-google-signin_google-signin:preReleaseBuild UP-TO-DATE
+> Task :react-native-google-signin_google-signin:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-picker_picker:preBuild UP-TO-DATE
+> Task :react-native-picker_picker:preReleaseBuild UP-TO-DATE
+> Task :react-native-picker_picker:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-reanimated:assertLatestReactNativeWithNewArchitectureTask SKIPPED
+> Task :react-native-reanimated:assertMinimalReactNativeVersionTask SKIPPED
+> Task :react-native-reanimated:prepareReanimatedHeadersForPrefabs UP-TO-DATE
+> Task :react-native-reanimated:prepareWorkletsHeadersForPrefabs UP-TO-DATE
+> Task :react-native-reanimated:preBuild UP-TO-DATE
+> Task :react-native-reanimated:preReleaseBuild UP-TO-DATE
+> Task :react-native-reanimated:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-safe-area-context:preBuild UP-TO-DATE
+> Task :react-native-safe-area-context:preReleaseBuild UP-TO-DATE
+> Task :react-native-safe-area-context:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-screens:preBuild UP-TO-DATE
+> Task :react-native-screens:preReleaseBuild UP-TO-DATE
+> Task :react-native-screens:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-svg:preBuild UP-TO-DATE
+> Task :react-native-svg:preReleaseBuild UP-TO-DATE
+> Task :react-native-svg:writeReleaseAarMetadata UP-TO-DATE
+> Task :react-native-worklets-core:prepareHeaders UP-TO-DATE
+> Task :react-native-worklets-core:preBuild UP-TO-DATE
+> Task :react-native-worklets-core:preReleaseBuild UP-TO-DATE
+> Task :react-native-worklets-core:writeReleaseAarMetadata UP-TO-DATE
+> Task :shopify_flash-list:preBuild UP-TO-DATE
+> Task :shopify_flash-list:preReleaseBuild UP-TO-DATE
+> Task :shopify_flash-list:writeReleaseAarMetadata UP-TO-DATE
+> Task :shopify_react-native-skia:prepareHeaders UP-TO-DATE
+> Task :shopify_react-native-skia:preBuild UP-TO-DATE
+> Task :shopify_react-native-skia:preReleaseBuild UP-TO-DATE
+> Task :shopify_react-native-skia:writeReleaseAarMetadata UP-TO-DATE
+> Task :app:checkReleaseAarMetadata
+
+> Task :app:createBundleReleaseJsAndAssets
+Starting Metro Bundler
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+SyntaxError: index.js: [BABEL] F:\CF\CF\index.js: Cannot find module 'react-native-worklets/plugin'
+Require stack:
+Android Bundling failed 1317ms index.js (1 module)
+- F:\CF\CF\node_modules\@babel\core\lib\config\files\plugins.js
+- F:\CF\CF\node_modules\@babel\core\lib\config\files\index.js
+- F:\CF\CF\node_modules\@babel\core\lib\index.js
+- F:\CF\CF\node_modules\metro-transform-worker\src\index.js
+- F:\CF\CF\node_modules\react-native-css-interop\dist\metro\transformer.js
+- F:\CF\CF\node_modules\metro\src\DeltaBundler\Worker.flow.js
+- F:\CF\CF\node_modules\metro\src\DeltaBundler\Worker.js
+- F:\CF\CF\node_modules\jest-worker\build\workers\processChild.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+Error: [BABEL] F:\CF\CF\index.js: Cannot find module 'react-native-worklets/plugin'
+Require stack:
+- F:\CF\CF\node_modules\@babel\core\lib\config\files\plugins.js
+- F:\CF\CF\node_modules\@babel\core\lib\config\files\index.js
+- F:\CF\CF\node_modules\@babel\core\lib\index.js
+- F:\CF\CF\node_modules\metro-transform-worker\src\index.js
+- F:\CF\CF\node_modules\react-native-css-interop\dist\metro\transformer.js
+- F:\CF\CF\node_modules\metro\src\DeltaBundler\Worker.flow.js
+- F:\CF\CF\node_modules\metro\src\DeltaBundler\Worker.js
+- F:\CF\CF\node_modules\jest-worker\build\workers\processChild.js
+
+Make sure that all the Babel plugins and presets you are using
+are defined as dependencies or devDependencies in your package.json
+file. It's possible that the missing plugin is loaded by a preset
+you are using that forgot to add the plugin to its dependencies: you
+can workaround this problem by explicitly adding the missing package
+to your top-level package.json.
+
+    at Function._resolveFilename (node:internal/modules/cjs/loader:1401:15)
+    at resolve (node:internal/modules/helpers:145:19)
+    at tryRequireResolve (F:\CF\CF\node_modules\@babel\core\lib\config\files\plugins.js:128:11)
+    at resolveStandardizedNameForRequire (F:\CF\CF\node_modules\@babel\core\lib\config\files\plugins.js:162:19)
+    at resolveStandardizedName (F:\CF\CF\node_modules\@babel\core\lib\config\files\plugins.js:183:12)
+    at loadPlugin (F:\CF\CF\node_modules\@babel\core\lib\config\files\plugins.js:56:7)
+    at loadPlugin.next (<anonymous>)
+    at createDescriptor (F:\CF\CF\node_modules\@babel\core\lib\config\config-descriptors.js:140:16)
+    at createDescriptor.next (<anonymous>)
+    at evaluateSync (F:\CF\CF\node_modules\gensync\index.js:251:28)
+    at F:\CF\CF\node_modules\gensync\index.js:31:34
+    at Array.map (<anonymous>)
+    at Function.sync (F:\CF\CF\node_modules\gensync\index.js:31:22)
+    at Function.all (F:\CF\CF\node_modules\gensync\index.js:210:24)
+    at Generator.next (<anonymous>)
+    at createDescriptors (F:\CF\CF\node_modules\@babel\core\lib\config\config-descriptors.js:102:41)
+    at createDescriptors.next (<anonymous>)
+    at createPluginDescriptors (F:\CF\CF\node_modules\@babel\core\lib\config\config-descriptors.js:99:17)
+    at createPluginDescriptors.next (<anonymous>)
+    at F:\CF\CF\node_modules\@babel\core\lib\gensync-utils\functional.js:22:27
+    at Generator.next (<anonymous>)
+    at mergeChainOpts (F:\CF\CF\node_modules\@babel\core\lib\config\config-chain.js:349:34)
+    at mergeChainOpts.next (<anonymous>)
+    at chainWalker (F:\CF\CF\node_modules\@babel\core\lib\config\config-chain.js:316:14)
+    at chainWalker.next (<anonymous>)
+    at buildPresetChain (F:\CF\CF\node_modules\@babel\core\lib\config\config-chain.js:33:24)
+    at buildPresetChain.next (<anonymous>)
+    at loadPresetDescriptor (F:\CF\CF\node_modules\@babel\core\lib\config\full.js:295:53)
+    at loadPresetDescriptor.next (<anonymous>)
+    at recursePresetDescriptors (F:\CF\CF\node_modules\@babel\core\lib\config\full.js:77:31)
+    at recursePresetDescriptors.next (<anonymous>)
+    at F:\CF\CF\node_modules\@babel\core\lib\config\full.js:156:21
+    at Generator.next (<anonymous>)
+    at loadFullConfig (F:\CF\CF\node_modules\@babel\core\lib\config\full.js:113:5)
+    at loadFullConfig.next (<anonymous>)
+    at transform (F:\CF\CF\node_modules\@babel\core\lib\transform.js:20:44)
+    at transform.next (<anonymous>)
+    at evaluateSync (F:\CF\CF\node_modules\gensync\index.js:251:28)
+    at sync (F:\CF\CF\node_modules\gensync\index.js:89:14)
+    at stopHiding - secret - don't use this - v1 (F:\CF\CF\node_modules\@babel\core\lib\errors\rewrite-stack-trace.js:47:12)
+    at Object.transformSync (F:\CF\CF\node_modules\@babel\core\lib\transform.js:40:76)
+    at parseWithBabel (F:\CF\CF\node_modules\@expo\metro-config\build\transformSync.js:65:18)
+    at transformSync (F:\CF\CF\node_modules\@expo\metro-config\build\transformSync.js:54:12)
+    at Object.transform (F:\CF\CF\node_modules\@expo\metro-config\build\babel-transformer.js:115:58)
+    at transformJSWithBabel (F:\CF\CF\node_modules\@expo\metro-config\build\transform-worker\metro-transform-worker.js:440:47)
+    at Object.transform (F:\CF\CF\node_modules\@expo\metro-config\build\transform-worker\metro-transform-worker.js:549:12)
+    at transform (F:\CF\CF\node_modules\@expo\metro-config\build\transform-worker\transform-worker.js:117:23)
+    at Object.transform (F:\CF\CF\node_modules\react-native-css-interop\dist\metro\transformer.js:15:16)
+    at transformFile (F:\CF\CF\node_modules\metro\src\DeltaBundler\Worker.flow.js:54:36)
+
+> Task :app:createBundleReleaseJsAndAssets FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:createBundleReleaseJsAndAssets'.
+> Process 'command 'cmd'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 1m 5s
+53 actionable tasks: 7 executed, 46 up-to-date

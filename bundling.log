@@ -1,0 +1,1891 @@
+Starting project at F:\CF\CF
+Starting Metro Bundler
+warning: Bundler cache is empty, rebuilding (this may take a minute)
+Waiting on http://localhost:8081
+Logs for your project will appear below.
+Android Bundled 29588ms index.js (3508 modules)
+ INFO  
+[7m [1m≡ƒÆí JavaScript logs will be removed from Metro in React Native 0.77![22m Please use React Native DevTools as your default tool. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Your app just crashed. See the error below.
+java.lang.ArrayIndexOutOfBoundsException
+  android.graphics.DashPathEffect.<init>(DashPathEffect.java:36)
+  com.horcrux.svg.RenderableView.setupStrokePaint(RenderableView.java:610)
+  com.horcrux.svg.RenderableView.draw(RenderableView.java:524)
+  com.horcrux.svg.RenderableView.render(RenderableView.java:483)
+  com.horcrux.svg.GroupView.drawGroup(GroupView.java:135)
+  com.horcrux.svg.GroupView.draw(GroupView.java:91)
+  com.horcrux.svg.RenderableView.render(RenderableView.java:483)
+  com.horcrux.svg.SvgView.drawChildren(SvgView.java:335)
+  com.horcrux.svg.SvgView.drawOutput(SvgView.java:281)
+  com.horcrux.svg.SvgView.onDraw(SvgView.java:134)
+  android.view.View.draw(View.java:24043)
+  com.facebook.react.views.view.ReactViewGroup.draw(ReactViewGroup.java:971)
+  android.view.View.updateDisplayListIfDirty(View.java:22870)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.View.draw(View.java:23760)
+  android.view.ViewGroup.drawChild(ViewGroup.java:4648)
+  android.view.ViewGroup.dispatchDraw(ViewGroup.java:4409)
+  android.view.View.draw(View.java:24050)
+  com.android.internal.policy.DecorView.draw(DecorView.java:832)
+  android.view.View.updateDisplayListIfDirty(View.java:22870)
+  android.view.ThreadedRenderer.updateViewTreeDisplayList(ThreadedRenderer.java:707)
+  android.view.ThreadedRenderer.updateRootDisplayList(ThreadedRenderer.java:713)
+  android.view.ThreadedRenderer.draw(ThreadedRenderer.java:811)
+  android.view.ViewRootImpl.draw(ViewRootImpl.java:5266)
+  android.view.ViewRootImpl.performDraw(ViewRootImpl.java:4958)
+  android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:4085)
+  android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2690)
+  android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9901)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1506)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1515)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1085)
+  android.view.Choreographer.doFrame(Choreographer.java:977)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1489)
+  android.os.Handler.handleCallback(Handler.java:958)
+  android.os.Handler.dispatchMessage(Handler.java:99)
+  android.os.Looper.loopOnce(Looper.java:243)
+  android.os.Looper.loop(Looper.java:338)
+  android.app.ActivityThread.main(ActivityThread.java:8470)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:600)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1064)
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+Android Bundled 93ms index.js (1 module)
+ INFO  
+[7m [1m≡ƒÆí JavaScript logs will be removed from Metro in React Native 0.77![22m Please use React Native DevTools as your default tool. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Writing to `value` during component render. Please ensure that you do not access the `value` property or use `set` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ WARN  [Reanimated] Reading from `value` during component render. Please ensure that you do not access the `value` property or use `get` method of a shared value while React is rendering a component.
+
+If you don't want to see this message, you can disable the `strict` mode. Refer to:
+https://docs.swmansion.com/react-native-reanimated/docs/debugging/logger-configuration for more details.
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Your app just crashed. See the error below.
+java.lang.ArrayIndexOutOfBoundsException
+  android.graphics.DashPathEffect.<init>(DashPathEffect.java:36)
+  com.horcrux.svg.RenderableView.setupStrokePaint(RenderableView.java:610)
+  com.horcrux.svg.RenderableView.draw(RenderableView.java:524)
+  com.horcrux.svg.RenderableView.render(RenderableView.java:483)
+  com.horcrux.svg.GroupView.drawGroup(GroupView.java:135)
+  com.horcrux.svg.GroupView.draw(GroupView.java:91)
+  com.horcrux.svg.RenderableView.render(RenderableView.java:483)
+  com.horcrux.svg.SvgView.drawChildren(SvgView.java:335)
+  com.horcrux.svg.SvgView.drawOutput(SvgView.java:281)
+  com.horcrux.svg.SvgView.onDraw(SvgView.java:134)
+  android.view.View.draw(View.java:24043)
+  com.facebook.react.views.view.ReactViewGroup.draw(ReactViewGroup.java:971)
+  android.view.View.updateDisplayListIfDirty(View.java:22870)
+  android.view.View.draw(View.java:23760)
+  android.view.ViewGroup.drawChild(ViewGroup.java:4648)
+  com.facebook.react.views.view.ReactViewGroup.drawChild(ReactViewGroup.java:1030)
+  android.view.ViewGroup.dispatchDraw(ViewGroup.java:4409)
+  com.facebook.react.views.view.ReactViewGroup.dispatchDraw(ReactViewGroup.java:981)
+  android.view.View.draw(View.java:24050)
+  com.facebook.react.views.view.ReactViewGroup.draw(ReactViewGroup.java:971)
+  android.view.View.updateDisplayListIfDirty(View.java:22870)
+  android.view.View.draw(View.java:23760)
+  android.view.ViewGroup.drawChild(ViewGroup.java:4648)
+  com.facebook.react.views.view.ReactViewGroup.drawChild(ReactViewGroup.java:1030)
+  android.view.ViewGroup.dispatchDraw(ViewGroup.java:4409)
+  com.facebook.react.views.view.ReactViewGroup.dispatchDraw(ReactViewGroup.java:981)
+  android.view.View.draw(View.java:24050)
+  com.facebook.react.views.view.ReactViewGroup.draw(ReactViewGroup.java:971)
+  android.view.View.updateDisplayListIfDirty(View.java:22870)
+  android.view.View.draw(View.java:23760)
+  android.view.ViewGroup.drawChild(ViewGroup.java:4648)
+  com.facebook.react.views.view.ReactViewGroup.drawChild(ReactViewGroup.java:1030)
+  android.view.ViewGroup.dispatchDraw(ViewGroup.java:4409)
+  com.facebook.react.views.view.ReactViewGroup.dispatchDraw(ReactViewGroup.java:981)
+  android.view.View.draw(View.java:24050)
+  com.facebook.react.views.view.ReactViewGroup.draw(ReactViewGroup.java:971)
+  android.view.View.updateDisplayListIfDirty(View.java:22870)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ThreadedRenderer.updateViewTreeDisplayList(ThreadedRenderer.java:707)
+  android.view.ThreadedRenderer.updateRootDisplayList(ThreadedRenderer.java:713)
+  android.view.ThreadedRenderer.draw(ThreadedRenderer.java:811)
+  android.view.ViewRootImpl.draw(ViewRootImpl.java:5266)
+  android.view.ViewRootImpl.performDraw(ViewRootImpl.java:4958)
+  android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:4085)
+  android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2690)
+  android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9901)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1506)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1515)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1085)
+  android.view.Choreographer.doFrame(Choreographer.java:977)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1489)
+  android.os.Handler.handleCallback(Handler.java:958)
+  android.os.Handler.dispatchMessage(Handler.java:99)
+  android.os.Looper.loopOnce(Looper.java:243)
+  android.os.Looper.loop(Looper.java:338)
+  android.app.ActivityThread.main(ActivityThread.java:8470)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:600)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1064)
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+ ERROR  Warning: You are setting the style `{ shadowOffset: ... }` as a prop. You should nest it in a style object. E.g. `{ style: { shadowOffset: ... } }`
+Android Bundled 334ms index.js (1 module)
+ INFO  
+[7m [1m≡ƒÆí JavaScript logs will be removed from Metro in React Native 0.77![22m Please use React Native DevTools as your default tool. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ ERROR  Your app just crashed. See the error below.
+java.lang.ArrayIndexOutOfBoundsException
+  android.graphics.DashPathEffect.<init>(DashPathEffect.java:36)
+  com.horcrux.svg.RenderableView.setupStrokePaint(RenderableView.java:610)
+  com.horcrux.svg.RenderableView.draw(RenderableView.java:524)
+  com.horcrux.svg.RenderableView.render(RenderableView.java:483)
+  com.horcrux.svg.GroupView.drawGroup(GroupView.java:135)
+  com.horcrux.svg.GroupView.draw(GroupView.java:91)
+  com.horcrux.svg.RenderableView.render(RenderableView.java:483)
+  com.horcrux.svg.SvgView.drawChildren(SvgView.java:335)
+  com.horcrux.svg.SvgView.drawOutput(SvgView.java:281)
+  com.horcrux.svg.SvgView.onDraw(SvgView.java:134)
+  android.view.View.draw(View.java:24043)
+  com.facebook.react.views.view.ReactViewGroup.draw(ReactViewGroup.java:971)
+  android.view.View.updateDisplayListIfDirty(View.java:22870)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ViewGroup.recreateChildDisplayList(ViewGroup.java:4632)
+  android.view.ViewGroup.dispatchGetDisplayList(ViewGroup.java:4605)
+  android.view.View.updateDisplayListIfDirty(View.java:22817)
+  android.view.ThreadedRenderer.updateViewTreeDisplayList(ThreadedRenderer.java:707)
+  android.view.ThreadedRenderer.updateRootDisplayList(ThreadedRenderer.java:713)
+  android.view.ThreadedRenderer.draw(ThreadedRenderer.java:811)
+  android.view.ViewRootImpl.draw(ViewRootImpl.java:5266)
+  android.view.ViewRootImpl.performDraw(ViewRootImpl.java:4958)
+  android.view.ViewRootImpl.performTraversals(ViewRootImpl.java:4085)
+  android.view.ViewRootImpl.doTraversal(ViewRootImpl.java:2690)
+  android.view.ViewRootImpl$TraversalRunnable.run(ViewRootImpl.java:9901)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1506)
+  android.view.Choreographer$CallbackRecord.run(Choreographer.java:1515)
+  android.view.Choreographer.doCallbacks(Choreographer.java:1085)
+  android.view.Choreographer.doFrame(Choreographer.java:977)
+  android.view.Choreographer$FrameDisplayEventReceiver.run(Choreographer.java:1489)
+  android.os.Handler.handleCallback(Handler.java:958)
+  android.os.Handler.dispatchMessage(Handler.java:99)
+  android.os.Looper.loopOnce(Looper.java:243)
+  android.os.Looper.loop(Looper.java:338)
+  android.app.ActivityThread.main(ActivityThread.java:8470)
+  java.lang.reflect.Method.invoke(Native Method)
+  com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:600)
+  com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1064)
+Android Bundled 92ms index.js (1 module)
+ INFO  
+[7m [1m≡ƒÆí JavaScript logs will be removed from Metro in React Native 0.77![22m Please use React Native DevTools as your default tool. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ ERROR  SyntaxError: F:\CF\CF\src\screens\WelcomeScreen.js: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (53:8)
+
+  51 |           <Text className="text-paper text-6xl font-bold">Γé╣</Text>
+  52 |         </View>
+> 53 |         <View className="flex-row flex-wrap justify-center">
+     |         ^
+  54 |           {words.map((word, index) => (
+  55 |             <AnimatedTextWord key={`${index}-${word}`} word={word} index={index} />
+  56 |           ))}
+ ERROR  [Error: TransformError SyntaxError: F:\CF\CF\src\screens\WelcomeScreen.js: Adjacent JSX elements must be wrapped in an enclosing tag. Did you want a JSX fragment <>...</>? (53:8)
+
+[0m [90m 51 |[39m           [33m<[39m[33mText[39m className[33m=[39m[32m"text-paper text-6xl font-bold"[39m[33m>[39mΓé╣[33m<[39m[33m/[39m[33mText[39m[33m>[39m
+ [90m 52 |[39m         [33m<[39m[33m/[39m[33mView[39m[33m>[39m
+[31m[1m>[22m[39m[90m 53 |[39m         [33m<[39m[33mView[39m className[33m=[39m[32m"flex-row flex-wrap justify-center"[39m[33m>[39m
+ [90m    |[39m         [31m[1m^[22m[39m
+ [90m 54 |[39m           {words[33m.[39mmap((word[33m,[39m index) [33m=>[39m (
+ [90m 55 |[39m             [33m<[39m[33mAnimatedTextWord[39m key[33m=[39m{[32m`${index}-${word}`[39m} word[33m=[39m{word} index[33m=[39m{index} [33m/[39m[33m>[39m
+ [90m 56 |[39m           ))}[0m]
+Android Bundled 90ms index.js (1 module)
+ INFO  
+[7m [1m≡ƒÆí JavaScript logs will be removed from Metro in React Native 0.77![22m Please use React Native DevTools as your default tool. Tip: Type [1mj[22m in the terminal to open (requires Google Chrome or Microsoft Edge).[27m
+ ERROR  Warning: TypeError: 0, _reactNativeSkia.useClockValue is not a function (it is undefined)
+
+This error is located at:
+    in Aurora (created by WelcomeScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by WelcomeScreen)
+    in WelcomeScreen (created by SceneView)
+    in StaticContainer
+    in EnsureSingleNavigator (created by SceneView)
+    in SceneView (created by NativeStackNavigator)
+    in NavigationProvider (created by NativeStackNavigator)
+    in RNSScreenContentWrapper (created by ScreenContentWrapper)
+    in ScreenContentWrapper (created by DebugContainer)
+    in DebugContainer
+    in RNSScreen (created by Animated(Anonymous))
+    in Animated(Anonymous)
+    in Suspender (created by Freeze)
+    in Suspense (created by Freeze)
+    in Freeze (created by DelayedFreeze)
+    in DelayedFreeze
+    in InnerScreen (created by Screen)
+    in Screen
+    in ScreenStackItem (created by SceneView)
+    in NavigationProvider (created by SceneView)
+    in SceneView (created by NativeStackView)
+    in RNSScreenStack (created by ScreenStack)
+    in Unknown (created by ScreenStack)
+    in ScreenStack (created by NativeStackView)
+    in RNCSafeAreaProvider (created by SafeAreaProvider)
+    in SafeAreaProvider (created by FrameSizeProvider)
+    in FrameSizeProvider (created by SafeAreaProviderCompat)
+    in SafeAreaProviderCompat (created by NativeStackView)
+    in NativeStackView (created by NativeStackNavigator)
+    in PreventRemoveProvider (created by NavigationContent)
+    in NavigationStateListenerProvider (created by NavigationContent)
+    in NavigationContent
+    in Unknown (created by NativeStackNavigator)
+    in NativeStackNavigator (created by AppNavigator)
+    in AppNavigator (created by App)
+    in ThemeProvider
+    in EnsureSingleNavigator
+    in BaseNavigationContainer
+    in NavigationContainerInner (created by App)
+    in PortalProviderComponent (created by BottomSheetModalProviderWrapper)
+    in BottomSheetModalProviderWrapper (created by App)
+    in RNGestureHandlerRootView (created by GestureHandlerRootView)
+    in GestureHandlerRootView (created by App)
+    in App (created by withDevTools(App))
+    in withDevTools(App)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in AppContainer
+    in main(RootComponent), js engine: hermes
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+ WARN  "#FFFFFF/60" is not a valid color or brush [Component Stack]
+Unable to resolve "../screens/ExpenseDetailsScreen" from "src\navigation\AppNavigator.js"
+ ERROR  [Error: undefined Unable to resolve module ../screens/ExpenseDetailsScreen from F:\CF\CF\src\navigation\AppNavigator.js: 
+
+None of these files exist:
+  * src\screens\ExpenseDetailsScreen(.android.ts|.native.ts|.ts|.android.tsx|.native.tsx|.tsx|.android.mjs|.native.mjs|.mjs|.android.js|.native.js|.js|.android.jsx|.native.jsx|.jsx|.android.json|.native.json|.json|.android.cjs|.native.cjs|.cjs|.android.scss|.native.scss|.scss|.android.sass|.native.sass|.sass|.android.css|.native.css|.css|.android.css|.native.css|.css)
+  * src\screens\ExpenseDetailsScreen
+[0m [90m  7 |[39m [36mimport[39m [33mHistoryScreen[39m [36mfrom[39m [32m'../screens/HistoryScreen'[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m [33mProjectsScreen[39m [36mfrom[39m [32m'../screens/ProjectsScreen'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m [33mExpenseDetailsScreen[39m [36mfrom[39m [32m'../screens/ExpenseDetailsScreen'[39m[33m;[39m
+ [90m    |[39m                                   [31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m useAuthStore [36mfrom[39m [32m'../store/authStore'[39m[33m;[39m
+ [90m 11 |[39m
+ [90m 12 |[39m [36mconst[39m [33mStack[39m [33m=[39m createNativeStackNavigator()[33m;[39m[0m]
+ ERROR  SyntaxError: F:\CF\CF\src\screens\HistoryScreen.js: Unexpected token, expected "," (213:1)
+
+  211 |     </SafeAreaView>
+  212 |   );
+> 213 | };
+      |  ^
+  214 |
+  215 | export default HistoryScreen;
+  216 |
+ ERROR  [Error: TransformError SyntaxError: F:\CF\CF\src\screens\HistoryScreen.js: Unexpected token, expected "," (213:1)
+
+[0m [90m 211 |[39m     [33m<[39m[33m/[39m[33mSafeAreaView[39m[33m>[39m
+ [90m 212 |[39m   )[33m;[39m
+[31m[1m>[22m[39m[90m 213 |[39m }[33m;[39m
+ [90m     |[39m  [31m[1m^[22m[39m
+ [90m 214 |[39m
+ [90m 215 |[39m [36mexport[39m [36mdefault[39m [33mHistoryScreen[39m[33m;[39m
+ [90m 216 |[39m[0m]
+ ERROR  SyntaxError: F:\CF\CF\src\screens\HistoryScreen.js: Unexpected token, expected "," (213:1)
+
+  211 |     </SafeAreaView>
+  212 |   );
+> 213 | };
+      |  ^
+  214 |
+  215 | export default HistoryScreen;
+  216 |
+ ERROR  [Error: TransformError SyntaxError: F:\CF\CF\src\screens\HistoryScreen.js: Unexpected token, expected "," (213:1)
+
+[0m [90m 211 |[39m     [33m<[39m[33m/[39m[33mSafeAreaView[39m[33m>[39m
+ [90m 212 |[39m   )[33m;[39m
+[31m[1m>[22m[39m[90m 213 |[39m }[33m;[39m
+ [90m     |[39m  [31m[1m^[22m[39m
+ [90m 214 |[39m
+ [90m 215 |[39m [36mexport[39m [36mdefault[39m [33mHistoryScreen[39m[33m;[39m
+ [90m 216 |[39m[0m]
+ ERROR  SyntaxError: F:\CF\CF\src\screens\HomeScreen.js: Identifier 'Papa' has already been declared. (12:7)
+
+  10 | import AnimatedList from '../components/AnimatedList';
+  11 | import Papa from 'papaparse';
+> 12 | import Papa from 'papaparse';
+     |        ^
+  13 |
+  14 | const HomeScreen = ({ navigation }) => {
+  15 |   const { user, logout } = useAuthStore();
+ ERROR  [Error: TransformError SyntaxError: F:\CF\CF\src\screens\HomeScreen.js: Identifier 'Papa' has already been declared. (12:7)
+
+[0m [90m 10 |[39m [36mimport[39m [33mAnimatedList[39m [36mfrom[39m [32m'../components/AnimatedList'[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mPapa[39m [36mfrom[39m [32m'papaparse'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 12 |[39m [36mimport[39m [33mPapa[39m [36mfrom[39m [32m'papaparse'[39m[33m;[39m
+ [90m    |[39m        [31m[1m^[22m[39m
+ [90m 13 |[39m
+ [90m 14 |[39m [36mconst[39m [33mHomeScreen[39m [33m=[39m ({ navigation }) [33m=>[39m {
+ [90m 15 |[39m   [36mconst[39m { user[33m,[39m logout } [33m=[39m useAuthStore()[33m;[39m[0m]
+ ERROR  Warning: ReferenceError: Property 'MotiView' doesn't exist
+
+This error is located at:
+    in renderHeader (created by PureComponentWrapper)
+    in RCTView (created by View)
+    in View (created by PureComponentWrapper)
+    in PureComponentWrapper (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollView)
+    in RCTScrollView
+    in VScrollViewNativeComponent (created by ScrollView)
+    in ScrollView (created by ScrollView)
+    in Wrapper (created by CssInterop.ScrollView)
+    in CssInterop.ScrollView (created by ScrollComponent)
+    in ScrollComponent (created by ProgressiveListView)
+    in ProgressiveListView (created by StickyContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by StickyContainer)
+    in StickyContainer (created by FlashList)
+    in FlashList (created by CssInterop.FlashList)
+    in CssInterop.FlashList (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in HistoryScreen (created by SceneView)
+    in StaticContainer
+    in EnsureSingleNavigator (created by SceneView)
+    in SceneView (created by NativeStackNavigator)
+    in NavigationProvider (created by NativeStackNavigator)
+    in RNSScreenContentWrapper (created by ScreenContentWrapper)
+    in ScreenContentWrapper (created by DebugContainer)
+    in DebugContainer
+    in RNSScreen (created by Animated(Anonymous))
+    in Animated(Anonymous)
+    in Suspender (created by Freeze)
+    in Suspense (created by Freeze)
+    in Freeze (created by DelayedFreeze)
+    in DelayedFreeze
+    in InnerScreen (created by Screen)
+    in Screen
+    in ScreenStackItem (created by SceneView)
+    in NavigationProvider (created by SceneView)
+    in SceneView (created by NativeStackView)
+    in RNSScreenStack (created by ScreenStack)
+    in Unknown (created by ScreenStack)
+    in ScreenStack (created by NativeStackView)
+    in RNCSafeAreaProvider (created by SafeAreaProvider)
+    in SafeAreaProvider (created by FrameSizeProvider)
+    in FrameSizeProvider (created by SafeAreaProviderCompat)
+    in SafeAreaProviderCompat (created by NativeStackView)
+    in NativeStackView (created by NativeStackNavigator)
+    in PreventRemoveProvider (created by NavigationContent)
+    in NavigationStateListenerProvider (created by NavigationContent)
+    in NavigationContent
+    in Unknown (created by NativeStackNavigator)
+    in NativeStackNavigator (created by AppNavigator)
+    in AppNavigator (created by App)
+    in ThemeProvider
+    in EnsureSingleNavigator
+    in BaseNavigationContainer
+    in NavigationContainerInner (created by App)
+    in PortalProviderComponent (created by BottomSheetModalProviderWrapper)
+    in BottomSheetModalProviderWrapper (created by App)
+    in RNGestureHandlerRootView (created by GestureHandlerRootView)
+    in GestureHandlerRootView (created by App)
+    in App (created by withDevTools(App))
+    in withDevTools(App)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in AppContainer
+    in main(RootComponent), js engine: hermes
+ ERROR  Warning: ReferenceError: Property 'MotiView' doesn't exist
+
+This error is located at:
+    in renderHeader (created by PureComponentWrapper)
+    in RCTView (created by View)
+    in View (created by PureComponentWrapper)
+    in PureComponentWrapper (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollView)
+    in RCTScrollView
+    in VScrollViewNativeComponent (created by ScrollView)
+    in ScrollView (created by ScrollView)
+    in Wrapper (created by CssInterop.ScrollView)
+    in CssInterop.ScrollView (created by ScrollComponent)
+    in ScrollComponent (created by ProgressiveListView)
+    in ProgressiveListView (created by StickyContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by StickyContainer)
+    in StickyContainer (created by FlashList)
+    in FlashList (created by CssInterop.FlashList)
+    in CssInterop.FlashList (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in HistoryScreen (created by SceneView)
+    in StaticContainer
+    in EnsureSingleNavigator (created by SceneView)
+    in SceneView (created by NativeStackNavigator)
+    in NavigationProvider (created by NativeStackNavigator)
+    in RNSScreenContentWrapper (created by ScreenContentWrapper)
+    in ScreenContentWrapper (created by DebugContainer)
+    in DebugContainer
+    in RNSScreen (created by Animated(Anonymous))
+    in Animated(Anonymous)
+    in Suspender (created by Freeze)
+    in Suspense (created by Freeze)
+    in Freeze (created by DelayedFreeze)
+    in DelayedFreeze
+    in InnerScreen (created by Screen)
+    in Screen
+    in ScreenStackItem (created by SceneView)
+    in NavigationProvider (created by SceneView)
+    in SceneView (created by NativeStackView)
+    in RNSScreenStack (created by ScreenStack)
+    in Unknown (created by ScreenStack)
+    in ScreenStack (created by NativeStackView)
+    in RNCSafeAreaProvider (created by SafeAreaProvider)
+    in SafeAreaProvider (created by FrameSizeProvider)
+    in FrameSizeProvider (created by SafeAreaProviderCompat)
+    in SafeAreaProviderCompat (created by NativeStackView)
+    in NativeStackView (created by NativeStackNavigator)
+    in PreventRemoveProvider (created by NavigationContent)
+    in NavigationStateListenerProvider (created by NavigationContent)
+    in NavigationContent
+    in Unknown (created by NativeStackNavigator)
+    in NativeStackNavigator (created by AppNavigator)
+    in AppNavigator (created by App)
+    in ThemeProvider
+    in EnsureSingleNavigator
+    in BaseNavigationContainer
+    in NavigationContainerInner (created by App)
+    in PortalProviderComponent (created by BottomSheetModalProviderWrapper)
+    in BottomSheetModalProviderWrapper (created by App)
+    in RNGestureHandlerRootView (created by GestureHandlerRootView)
+    in GestureHandlerRootView (created by App)
+    in App (created by withDevTools(App))
+    in withDevTools(App)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in AppContainer
+    in main(RootComponent), js engine: hermes
+ ERROR  Warning: ReferenceError: Property 'MotiView' doesn't exist
+
+This error is located at:
+    in renderHeader (created by PureComponentWrapper)
+    in RCTView (created by View)
+    in View (created by PureComponentWrapper)
+    in PureComponentWrapper (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollView)
+    in RCTScrollView
+    in VScrollViewNativeComponent (created by ScrollView)
+    in ScrollView (created by ScrollView)
+    in Wrapper (created by CssInterop.ScrollView)
+    in CssInterop.ScrollView (created by ScrollComponent)
+    in ScrollComponent (created by ProgressiveListView)
+    in ProgressiveListView (created by StickyContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by StickyContainer)
+    in StickyContainer (created by FlashList)
+    in FlashList (created by CssInterop.FlashList)
+    in CssInterop.FlashList (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in HistoryScreen (created by SceneView)
+    in StaticContainer
+    in EnsureSingleNavigator (created by SceneView)
+    in SceneView (created by NativeStackNavigator)
+    in NavigationProvider (created by NativeStackNavigator)
+    in RNSScreenContentWrapper (created by ScreenContentWrapper)
+    in ScreenContentWrapper (created by DebugContainer)
+    in DebugContainer
+    in RNSScreen (created by Animated(Anonymous))
+    in Animated(Anonymous)
+    in Suspender (created by Freeze)
+    in Suspense (created by Freeze)
+    in Freeze (created by DelayedFreeze)
+    in DelayedFreeze
+    in InnerScreen (created by Screen)
+    in Screen
+    in ScreenStackItem (created by SceneView)
+    in NavigationProvider (created by SceneView)
+    in SceneView (created by NativeStackView)
+    in RNSScreenStack (created by ScreenStack)
+    in Unknown (created by ScreenStack)
+    in ScreenStack (created by NativeStackView)
+    in RNCSafeAreaProvider (created by SafeAreaProvider)
+    in SafeAreaProvider (created by FrameSizeProvider)
+    in FrameSizeProvider (created by SafeAreaProviderCompat)
+    in SafeAreaProviderCompat (created by NativeStackView)
+    in NativeStackView (created by NativeStackNavigator)
+    in PreventRemoveProvider (created by NavigationContent)
+    in NavigationStateListenerProvider (created by NavigationContent)
+    in NavigationContent
+    in Unknown (created by NativeStackNavigator)
+    in NativeStackNavigator (created by AppNavigator)
+    in AppNavigator (created by App)
+    in ThemeProvider
+    in EnsureSingleNavigator
+    in BaseNavigationContainer
+    in NavigationContainerInner (created by App)
+    in PortalProviderComponent (created by BottomSheetModalProviderWrapper)
+    in BottomSheetModalProviderWrapper (created by App)
+    in RNGestureHandlerRootView (created by GestureHandlerRootView)
+    in GestureHandlerRootView (created by App)
+    in App (created by withDevTools(App))
+    in withDevTools(App)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in AppContainer
+    in main(RootComponent), js engine: hermes
+ ERROR  Warning: ReferenceError: Property 'MotiView' doesn't exist
+
+This error is located at:
+    in renderHeader (created by PureComponentWrapper)
+    in RCTView (created by View)
+    in View (created by PureComponentWrapper)
+    in PureComponentWrapper (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollView)
+    in RCTScrollView
+    in VScrollViewNativeComponent (created by ScrollView)
+    in ScrollView (created by ScrollView)
+    in Wrapper (created by CssInterop.ScrollView)
+    in CssInterop.ScrollView (created by ScrollComponent)
+    in ScrollComponent (created by ProgressiveListView)
+    in ProgressiveListView (created by StickyContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by StickyContainer)
+    in StickyContainer (created by FlashList)
+    in FlashList (created by CssInterop.FlashList)
+    in CssInterop.FlashList (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in HistoryScreen (created by SceneView)
+    in StaticContainer
+    in EnsureSingleNavigator (created by SceneView)
+    in SceneView (created by NativeStackNavigator)
+    in NavigationProvider (created by NativeStackNavigator)
+    in RNSScreenContentWrapper (created by ScreenContentWrapper)
+    in ScreenContentWrapper (created by DebugContainer)
+    in DebugContainer
+    in RNSScreen (created by Animated(Anonymous))
+    in Animated(Anonymous)
+    in Suspender (created by Freeze)
+    in Suspense (created by Freeze)
+    in Freeze (created by DelayedFreeze)
+    in DelayedFreeze
+    in InnerScreen (created by Screen)
+    in Screen
+    in ScreenStackItem (created by SceneView)
+    in NavigationProvider (created by SceneView)
+    in SceneView (created by NativeStackView)
+    in RNSScreenStack (created by ScreenStack)
+    in Unknown (created by ScreenStack)
+    in ScreenStack (created by NativeStackView)
+    in RNCSafeAreaProvider (created by SafeAreaProvider)
+    in SafeAreaProvider (created by FrameSizeProvider)
+    in FrameSizeProvider (created by SafeAreaProviderCompat)
+    in SafeAreaProviderCompat (created by NativeStackView)
+    in NativeStackView (created by NativeStackNavigator)
+    in PreventRemoveProvider (created by NavigationContent)
+    in NavigationStateListenerProvider (created by NavigationContent)
+    in NavigationContent
+    in Unknown (created by NativeStackNavigator)
+    in NativeStackNavigator (created by AppNavigator)
+    in AppNavigator (created by App)
+    in ThemeProvider
+    in EnsureSingleNavigator
+    in BaseNavigationContainer
+    in NavigationContainerInner (created by App)
+    in PortalProviderComponent (created by BottomSheetModalProviderWrapper)
+    in BottomSheetModalProviderWrapper (created by App)
+    in RNGestureHandlerRootView (created by GestureHandlerRootView)
+    in GestureHandlerRootView (created by App)
+    in App (created by withDevTools(App))
+    in withDevTools(App)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in AppContainer
+    in main(RootComponent), js engine: hermes
+ ERROR  Warning: ReanimatedError: [Reanimated] The easing function is not a worklet. Please make sure you import `Easing` from react-native-reanimated.
+
+This error is located at:
+    in Moti (created by CssInterop.Moti.View)
+    in CssInterop.Moti.View (created by renderHeader)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by renderHeader)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by renderHeader)
+    in renderHeader (created by PureComponentWrapper)
+    in RCTView (created by View)
+    in View (created by PureComponentWrapper)
+    in PureComponentWrapper (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollView)
+    in RCTScrollView
+    in VScrollViewNativeComponent (created by ScrollView)
+    in ScrollView (created by ScrollView)
+    in Wrapper (created by CssInterop.ScrollView)
+    in CssInterop.ScrollView (created by ScrollComponent)
+    in ScrollComponent (created by ProgressiveListView)
+    in ProgressiveListView (created by StickyContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by StickyContainer)
+    in StickyContainer (created by FlashList)
+    in FlashList (created by CssInterop.FlashList)
+    in CssInterop.FlashList (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in HistoryScreen (created by SceneView)
+    in StaticContainer
+    in EnsureSingleNavigator (created by SceneView)
+    in SceneView (created by NativeStackNavigator)
+    in NavigationProvider (created by NativeStackNavigator)
+    in RNSScreenContentWrapper (created by ScreenContentWrapper)
+    in ScreenContentWrapper (created by DebugContainer)
+    in DebugContainer
+    in RNSScreen (created by Animated(Anonymous))
+    in Animated(Anonymous)
+    in Suspender (created by Freeze)
+    in Suspense (created by Freeze)
+    in Freeze (created by DelayedFreeze)
+    in DelayedFreeze
+    in InnerScreen (created by Screen)
+    in Screen
+    in ScreenStackItem (created by SceneView)
+    in NavigationProvider (created by SceneView)
+    in SceneView (created by NativeStackView)
+    in RNSScreenStack (created by ScreenStack)
+    in Unknown (created by ScreenStack)
+    in ScreenStack (created by NativeStackView)
+    in RNCSafeAreaProvider (created by SafeAreaProvider)
+    in SafeAreaProvider (created by FrameSizeProvider)
+    in FrameSizeProvider (created by SafeAreaProviderCompat)
+    in SafeAreaProviderCompat (created by NativeStackView)
+    in NativeStackView (created by NativeStackNavigator)
+    in PreventRemoveProvider (created by NavigationContent)
+    in NavigationStateListenerProvider (created by NavigationContent)
+    in NavigationContent
+    in Unknown (created by NativeStackNavigator)
+    in NativeStackNavigator (created by AppNavigator)
+    in AppNavigator (created by App)
+    in ThemeProvider
+    in EnsureSingleNavigator
+    in BaseNavigationContainer
+    in NavigationContainerInner (created by App)
+    in PortalProviderComponent (created by BottomSheetModalProviderWrapper)
+    in BottomSheetModalProviderWrapper (created by App)
+    in RNGestureHandlerRootView (created by GestureHandlerRootView)
+    in GestureHandlerRootView (created by App)
+    in App (created by withDevTools(App))
+    in withDevTools(App)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in AppContainer
+    in main(RootComponent), js engine: hermes
+ ERROR  Warning: ReanimatedError: [Reanimated] The easing function is not a worklet. Please make sure you import `Easing` from react-native-reanimated.
+
+This error is located at:
+    in Moti (created by CssInterop.Moti.View)
+    in CssInterop.Moti.View (created by renderHeader)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by renderHeader)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by renderHeader)
+    in renderHeader (created by PureComponentWrapper)
+    in RCTView (created by View)
+    in View (created by PureComponentWrapper)
+    in PureComponentWrapper (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollComponent)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by ScrollView)
+    in RCTScrollView
+    in VScrollViewNativeComponent (created by ScrollView)
+    in ScrollView (created by ScrollView)
+    in Wrapper (created by CssInterop.ScrollView)
+    in CssInterop.ScrollView (created by ScrollComponent)
+    in ScrollComponent (created by ProgressiveListView)
+    in ProgressiveListView (created by StickyContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by StickyContainer)
+    in StickyContainer (created by FlashList)
+    in FlashList (created by CssInterop.FlashList)
+    in CssInterop.FlashList (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by HistoryScreen)
+    in HistoryScreen (created by SceneView)
+    in StaticContainer
+    in EnsureSingleNavigator (created by SceneView)
+    in SceneView (created by NativeStackNavigator)
+    in NavigationProvider (created by NativeStackNavigator)
+    in RNSScreenContentWrapper (created by ScreenContentWrapper)
+    in ScreenContentWrapper (created by DebugContainer)
+    in DebugContainer
+    in RNSScreen (created by Animated(Anonymous))
+    in Animated(Anonymous)
+    in Suspender (created by Freeze)
+    in Suspense (created by Freeze)
+    in Freeze (created by DelayedFreeze)
+    in DelayedFreeze
+    in InnerScreen (created by Screen)
+    in Screen
+    in ScreenStackItem (created by SceneView)
+    in NavigationProvider (created by SceneView)
+    in SceneView (created by NativeStackView)
+    in RNSScreenStack (created by ScreenStack)
+    in Unknown (created by ScreenStack)
+    in ScreenStack (created by NativeStackView)
+    in RNCSafeAreaProvider (created by SafeAreaProvider)
+    in SafeAreaProvider (created by FrameSizeProvider)
+    in FrameSizeProvider (created by SafeAreaProviderCompat)
+    in SafeAreaProviderCompat (created by NativeStackView)
+    in NativeStackView (created by NativeStackNavigator)
+    in PreventRemoveProvider (created by NavigationContent)
+    in NavigationStateListenerProvider (created by NavigationContent)
+    in NavigationContent
+    in Unknown (created by NativeStackNavigator)
+    in NativeStackNavigator (created by AppNavigator)
+    in AppNavigator (created by App)
+    in ThemeProvider
+    in EnsureSingleNavigator
+    in BaseNavigationContainer
+    in NavigationContainerInner (created by App)
+    in PortalProviderComponent (created by BottomSheetModalProviderWrapper)
+    in BottomSheetModalProviderWrapper (created by App)
+    in RNGestureHandlerRootView (created by GestureHandlerRootView)
+    in GestureHandlerRootView (created by App)
+    in App (created by withDevTools(App))
+    in withDevTools(App)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in RCTView (created by View)
+    in View (created by CssInterop.View)
+    in CssInterop.View (created by AppContainer)
+    in AppContainer
+    in main(RootComponent), js engine: hermes

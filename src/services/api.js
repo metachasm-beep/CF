@@ -98,9 +98,10 @@ export const fetchExpenses = async () => {
           amount: parseFloat((values[1] || '0').replace(/[^\d.-]/g, '')) || 0,
           category: (values[2] || 'Uncategorized').replace(/"/g, ''),
           subCategory: (values[3] || '').replace(/"/g, ''),
-          mode: (values[4] || 'Direct').replace(/"/g, ''),
-          remarks: (values[5] || '').replace(/"/g, ''),
-          user: (values[6] || '').replace(/"/g, '')
+          expenseHead: (values[4] || '').replace(/"/g, ''),
+          mode: (values[5] || 'Direct').replace(/"/g, ''),
+          remarks: (values[6] || '').replace(/"/g, ''),
+          user: (values[7] || '').replace(/"/g, '')
         };
         data.push(expense);
     }

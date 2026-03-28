@@ -62,17 +62,17 @@ const ProjectsScreen = ({ navigation }) => {
               </View>
             }
             renderItem={({ item }) => (
-              <TouchableOpacity className="bg-paper p-5 rounded-apple border border-border flex-row items-center mb-4 shadow-sm active:bg-gray-50">
-                <View className="w-14 h-14 bg-secondary/10 rounded-2xl items-center justify-center mr-4">
-                  <Briefcase size={28} color="#14B8A6" />
+              <TouchableOpacity className="bg-paper p-6 rounded-[32px] border border-systemGray6 flex-row items-center mb-4 shadow-sm active:bg-systemGray6 active:scale-[0.98]">
+                <View className="w-16 h-16 bg-secondary/10 rounded-[22px] items-center justify-center mr-4">
+                  <Briefcase size={32} color="#14B8A6" />
                 </View>
                 <View className="flex-1">
-                  <Text className="font-bold text-text text-xl mb-1">{item.name}</Text>
-                  <Text className="text-muted text-sm">{item.txCount} transaction{item.txCount !== 1 ? 's' : ''}</Text>
+                  <Text className="font-bold text-text text-xl mb-1 tracking-tight">{item.name}</Text>
+                  <Text className="text-muted text-[12px] font-bold uppercase tracking-wider">{item.txCount} transaction{item.txCount !== 1 ? 's' : ''}</Text>
                 </View>
                 <View className="items-end">
-                  <Text className="text-muted text-xs font-bold tracking-widest mb-1 uppercase">Allocated</Text>
-                  <Text className="font-black text-primary text-xl">₹{item.spent.toLocaleString()}</Text>
+                  <Text className="text-muted text-[10px] font-bold tracking-widest mb-1 uppercase">Allocated</Text>
+                  <Text className="font-bold text-primary text-2xl tracking-tighter">{"\u20B9"}{item.spent.toLocaleString()}</Text>
                 </View>
               </TouchableOpacity>
             )}

@@ -24,12 +24,28 @@ const LoginScreen = () => {
       const userInfo = await GoogleSignin.signIn();
       // userInfo structure changed in v11+, userInfo.user contains the data
       if (userInfo?.user) {
+        const allowedEmails = ['metachasm@gmail.com', 'auzaarbazaar@gmail.com'];
+        if (!allowedEmails.includes(userInfo.user.email)) {
+          await GoogleSignin.signOut();
+          Alert.alert('Access Denied', 'This app is for authorized users only.');
+          setIsSigningIn(false);
+          return;
+        }
+
         setUser({
           email: userInfo.user.email,
           name: userInfo.user.name,
           picture: userInfo.user.photo
         });
       } else if (userInfo?.data?.user) { // Fallback for v13
+        const allowedEmails = ['metachasm@gmail.com', 'auzaarbazaar@gmail.com'];
+        if (!allowedEmails.includes(userInfo.data.user.email)) {
+          await GoogleSignin.signOut();
+          Alert.alert('Access Denied', 'This app is for authorized users only.');
+          setIsSigningIn(false);
+          return;
+        }
+
         setUser({
           email: userInfo.data.user.email,
           name: userInfo.data.user.name,
@@ -59,7 +75,7 @@ const LoginScreen = () => {
       <View className="w-full max-w-sm px-8">
         <View className="items-center mb-12">
           <View className="w-20 h-20 bg-primary rounded-3xl items-center justify-center shadow-lg mb-6">
-            <Text className="text-paper text-5xl font-bold">₹</Text>
+            <Text className="text-paper text-5xl font-bold">{"\u20B9"}</Text>
           </View>
           <Text className="text-3xl font-bold text-text mb-2">Welcome Back</Text>
           <Text className="text-muted text-center">Please sign in to manage your finances securely.</Text>

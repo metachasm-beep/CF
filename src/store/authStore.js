@@ -8,7 +8,7 @@ const useAuthStore = create((set) => ({
   
   setUser: (user) => {
     // Restricted users only
-    const allowedEmails = ['metachasm@gmail.com', 'auzaarbazaar@gmail.com', 'paullovessoccer@gmail.com'];
+    const allowedEmails = ['metachasm@gmail.com', 'auzaarbazaar@gmail.com'];
     if (user && allowedEmails.includes(user.email)) {
       set({ user, isAuthenticated: true, isLoading: false });
       SecureStore.setItemAsync('user', JSON.stringify(user));

@@ -1,10 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef, useMemo, useCallback } from 'react';
 import { 
   View, Text, TextInput, TouchableOpacity, ScrollView, 
   SafeAreaView, StatusBar, Alert, Platform, Modal, 
-  KeyboardAvoidingView, Image, Dimensions
+  KeyboardAvoidingView, Image, Dimensions, StyleSheet
 } from 'react-native';
-import { X, ChevronDown, Check, Edit3, CreditCard, Tag, Camera as CameraIcon, Image as ImageIcon } from 'lucide-react-native';
+import { 
+  X, ChevronRight, Check, Edit3, CreditCard, Tag, 
+  Camera as CameraIcon, Image as ImageIcon, Briefcase, 
+  HardHat, UserCheck, Info
+} from 'lucide-react-native';
 import { EXPENSE_CATEGORIES, SUB_CATEGORIES, PAYMENT_MODES } from '../utils/categories';
 import { saveExpense } from '../services/api';
 import useAuthStore from '../store/authStore';
@@ -21,29 +25,43 @@ const AddExpenseScreen = ({ navigation }) => {
   
   const [formData, setFormData] = useState({
     amount: '',
-    category: '',
+    mainCategory: '',
     subCategory: '',
+    expenseHead: '',
     remarks: '',
     mode: 'Direct',
   });
 
   const [images, setImages] = useState([]);
+  const [searchQuery, setSearchQuery] = useState('');
   const [activeSelector, setActiveSelector] = useState(null); 
   const [imageModalVisible, setImageModalVisible] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const bottomSheetModalRef = React.useRef(null);
-  const snapPoints = React.useMemo(() => ['50%'], []);
-  const availableSubCategories = formData.category ? EXPENSE_CATEGORIES[formData.category] || [] : [];
+  const bottomSheetModalRef = useRef(null);
+  const snapPoints = useMemo(() => ['70%', '90%'], []);
   
-  const handlePresentModalPress = (selector) => {
+  // Selection Logic
+  const availableSubCategories = useMemo(() => {
+    return formData.mainCategory ? EXPENSE_CATEGORIES[formData.mainCategory] || [] : [];
+  }, [formData.mainCategory]);
+
+  const availableHeads = useMemo(() => {
+    return formData.subCategory ? SUB_CATEGORIES[formData.subCategory] || [] : [];
+  }, [formData.subCategory]);
+
+  const hasHeads = availableHeads.length > 0;
+
+  const handlePresentModalPress = useCallback((selector) => {
     setActiveSelector(selector);
+    setSearchQuery('');
     bottomSheetModalRef.current?.present();
-  };
+  }, []);
   
-  const handleCloseModal = () => {
+  const handleCloseModal = useCallback(() => {
     bottomSheetModalRef.current?.dismiss();
-  };
+  }, []);
   
   useEffect(() => {
     (async () => {
@@ -75,15 +93,26 @@ const AddExpenseScreen = ({ navigation }) => {
   };
 
   const handleSave = async () => {
-    if (!formData.amount || !formData.category || !formData.subCategory || !formData.remarks) {
-      Alert.alert("Missing Fields", "Please fill in all mandatory fields including Remarks.");
-      return;
+    // Basic validation
+    if (!formData.amount) { Alert.alert("Required", "Please enter an amount."); return; }
+    if (!formData.mainCategory) { Alert.alert("Required", "Please select a main category."); return; }
+    if (!formData.subCategory) { Alert.alert("Required", "Please select a sub-category."); return; }
+    if (hasHeads && !formData.expenseHead) { Alert.alert("Required", "Please select an expense head."); return; }
+    if (!formData.remarks || formData.remarks.trim().length < 3) { 
+      Alert.alert("Required", "Please provide detailed remarks (min 3 characters)."); 
+      return; 
     }
 
+    setIsSubmitting(true);
     try {
       const payload = {
-        ...formData,
-        date: new Date().toLocaleDateString(),
+        date: new Date().toLocaleDateString('en-IN'),
+        amount: formData.amount,
+        category: formData.mainCategory,
+        subCategory: formData.subCategory,
+        expenseHead: hasHeads ? formData.expenseHead : formData.subCategory, // Falls back to subCategory if no specific head
+        mode: formData.mode,
+        remarks: formData.remarks,
         user: user?.email,
       };
       
@@ -91,17 +120,36 @@ const AddExpenseScreen = ({ navigation }) => {
       setShowSuccess(true);
     } catch (error) {
       Alert.alert("Error", "Failed to save expense. Please try again.");
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   const renderSelectorModal = () => {
     let options = [];
     let title = "";
-    if (activeSelector === 'category') { options = Object.keys(EXPENSE_CATEGORIES); title = "Select Category"; }
-    else if (activeSelector === 'subCategory') { options = availableSubCategories; title = "Select Sub-Category"; }
-    else if (activeSelector === 'mode') { options = PAYMENT_MODES; title = "Payment Method"; }
+    if (activeSelector === 'mainCategory') { 
+      options = Object.keys(EXPENSE_CATEGORIES); 
+      title = "Main Category"; 
+    }
+    else if (activeSelector === 'subCategory') { 
+      options = availableSubCategories; 
+      title = "Sub-Category"; 
+    }
+    else if (activeSelector === 'expenseHead') { 
+      options = availableHeads; 
+      title = "Expense Head"; 
+    }
+    else if (activeSelector === 'mode') { 
+      options = PAYMENT_MODES; 
+      title = "Payment Mode"; 
+    }
 
-    const renderBackdrop = React.useCallback(
+    const filteredOptions = options.filter(opt => 
+      opt.toLowerCase().includes(searchQuery.toLowerCase())
+    );
+
+    const renderBackdrop = useCallback(
       props => (
         <BottomSheetBackdrop {...props} disappearsOnIndex={-1} appearsOnIndex={0} opacity={0.5} />
       ), []
@@ -113,19 +161,40 @@ const AddExpenseScreen = ({ navigation }) => {
         index={0}
         snapPoints={snapPoints}
         backdropComponent={renderBackdrop}
-        backgroundStyle={{ backgroundColor: '#FFFFFF', borderRadius: 24 }}
-        handleIndicatorStyle={{ backgroundColor: '#CCC', width: 40 }}
+        backgroundStyle={{ backgroundColor: '#F2F2F7', borderRadius: 32 }}
+        handleIndicatorStyle={{ backgroundColor: '#D1D1D6', width: 40 }}
       >
-        <BottomSheetView style={{ flex: 1, padding: 24 }}>
-          <Text className="text-xl font-bold text-text mb-6 text-center">{title}</Text>
-          <ScrollView showsVerticalScrollIndicator={false}>
-            {options.map((option, index) => (
-              <TouchableOpacity
-                key={index}
-                className="py-4 border-b border-gray-100 flex-row justify-between items-center"
-                onPress={() => {
-                  if (activeSelector === 'category') {
-                    setFormData(prev => ({ ...prev, category: option, subCategory: '' }));
+        <BottomSheetView style={{ flex: 1, padding: 20 }}>
+          <Text className="text-xl font-bold text-text mb-4 text-center">{title}</Text>
+          
+          <View style={styles.shadowSm} className="mb-4 flex-row items-center bg-white rounded-2xl px-4 py-2 border border-systemGray6">
+            <Edit3 size={18} color="#8E8E93" className="mr-2" />
+            <TextInput
+              className="flex-1 text-lg text-text py-1"
+              placeholder={`Search ${title.toLowerCase()}...`}
+              placeholderTextColor="#AEAEB2"
+              value={searchQuery}
+              onChangeText={setSearchQuery}
+              autoCapitalize="none"
+              autoCorrect={false}
+            />
+            {searchQuery.length > 0 && (
+              <TouchableOpacity onPress={() => setSearchQuery('')}>
+                <Check size={18} color="#C7C7CC" />
+              </TouchableOpacity>
+            )}
+          </View>
+          <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={{ paddingBottom: 40 }}>
+            {filteredOptions.length > 0 ? (
+              filteredOptions.map((option, index) => (
+                <TouchableOpacity
+                  key={index}
+                  className="py-4 border-b border-systemGray6 flex-row justify-between items-center"
+                  onPress={() => {
+                  if (activeSelector === 'mainCategory') {
+                    setFormData(prev => ({ ...prev, mainCategory: option, subCategory: '', expenseHead: '' }));
+                  } else if (activeSelector === 'subCategory') {
+                    setFormData(prev => ({ ...prev, subCategory: option, expenseHead: '' }));
                   } else {
                     setFormData(prev => ({ ...prev, [activeSelector]: option }));
                   }
@@ -137,7 +206,12 @@ const AddExpenseScreen = ({ navigation }) => {
                   <Check size={20} color="#0F766E" strokeWidth={3} />
                 )}
               </TouchableOpacity>
-            ))}
+            ))
+          ) : (
+            <View className="py-10 items-center">
+              <Text className="text-muted text-lg italic">No matches found.</Text>
+            </View>
+          )}
           </ScrollView>
         </BottomSheetView>
       </BottomSheetModal>
@@ -147,11 +221,10 @@ const AddExpenseScreen = ({ navigation }) => {
   const render3DImageModal = () => {
     return (
       <Modal visible={imageModalVisible} transparent={true} animationType="fade">
-        <View className="flex-1 bg-black/90 justify-center items-center">
+        <View className="flex-1 bg-black/95 justify-center items-center">
             <TouchableOpacity 
-              className="absolute top-16 right-6 z-50 bg-white/20 p-3 rounded-full" 
+              className="absolute top-16 right-6 z-50 bg-white/10 p-4 rounded-full" 
               onPress={() => setImageModalVisible(false)}
-              accessibilityLabel="Close 3D slider"
             >
               <X size={24} color="#FFF" />
             </TouchableOpacity>
@@ -159,26 +232,33 @@ const AddExpenseScreen = ({ navigation }) => {
             {images.length > 0 ? (
               <Carousel
                 loop
-                width={PAGE_WIDTH * 0.85}
-                height={PAGE_HEIGHT * 0.6}
+                width={PAGE_WIDTH * 0.9}
+                height={PAGE_HEIGHT * 0.7}
                 data={images}
-                mode="parallax" // 3D aesthetic modal slider!
+                mode="parallax"
                 modeConfig={{
                   parallaxScrollingScale: 0.9,
-                  parallaxScrollingOffset: 50,
+                  parallaxScrollingOffset: 40,
                 }}
                 renderItem={({ item }) => (
-                  <View className="flex-1 rounded-[32px] overflow-hidden shadow-2xl items-center justify-center bg-[#1D1D1F]">
-                    <Image source={{ uri: item }} className="w-full h-full" resizeMode="cover" />
+                  <View style={styles.shadow2xl} className="flex-1 rounded-[40px] overflow-hidden items-center justify-center bg-[#1C1C1E]">
+                    <Image source={{ uri: item }} className="w-full h-full" resizeMode="contain" />
                   </View>
                 )}
               />
             ) : (
-              <Text className="text-white/60 font-medium">No receipts attached yet.</Text>
+              <Text className="text-white/40 font-medium">No receipts attached.</Text>
             )}
         </View>
       </Modal>
     );
+  };
+
+  const getCategoryIcon = (category) => {
+    if (category === "Business Expenses") return <Briefcase size={20} color="#007AFF" />;
+    if (category === "Site Expenses") return <HardHat size={20} color="#FF9500" />;
+    if (category === "Vendor Payments") return <UserCheck size={20} color="#34C759" />;
+    return <Tag size={20} color="#8E8E93" />;
   };
 
   return (
@@ -188,54 +268,58 @@ const AddExpenseScreen = ({ navigation }) => {
         behavior={Platform.OS === "ios" ? "padding" : "height"}
         className="flex-1"
       >
-        <View className="flex-1 px-6 pt-6">
-          {/* Header */}
-          <View className="flex-row items-center justify-between mb-8">
-            <TouchableOpacity onPress={() => navigation.goBack()} className="p-2" accessibilityLabel="Go back">
-              <X size={28} color="#1D1D1F" />
+        <View className="flex-1 px-6 pt-4">
+          {/* Apple Style Header */}
+          <View className="flex-row items-center justify-between mb-6">
+            <TouchableOpacity 
+              onPress={() => navigation.goBack()} 
+              className="w-10 h-10 items-center justify-center bg-systemGray5 rounded-full"
+            >
+              <X size={20} color="#1D1D1F" />
             </TouchableOpacity>
-            <Text className="text-2xl font-bold text-text">New Expense</Text>
-            <TouchableOpacity onPress={handleSave} accessibilityLabel="Save expense">
-              <Text className="text-primary font-bold text-lg">Save</Text>
+            <Text className="text-xl font-bold text-text">New Transaction</Text>
+            <TouchableOpacity 
+              onPress={handleSave} 
+              disabled={isSubmitting}
+              className={`px-4 py-2 ${isSubmitting ? 'opacity-50' : 'active:opacity-70'}`}
+            >
+              <Text className="text-primary font-bold text-lg">{isSubmitting ? '...' : 'Done'}</Text>
             </TouchableOpacity>
           </View>
 
           <ScrollView showsVerticalScrollIndicator={false} className="flex-1">
-            {/* Amount Input */}
-            <View className="items-center mb-10">
-              <Text className="text-muted text-sm mb-2 font-bold tracking-widest">AMOUNT</Text>
+            {/* Amount Input Secion */}
+            <View className="items-center mb-8 py-4">
+              <Text className="text-muted text-xs font-bold tracking-[2px] uppercase mb-1">Total Amount</Text>
               <View className="flex-row items-baseline">
-                <Text className="text-text text-4xl mr-2 font-light">₹</Text>
+                <Text className="text-text text-3xl font-light mr-1">{"\u20B9"}</Text>
                 <TextInput 
-                  className="text-text text-6xl font-black min-w-[150px] text-center"
+                  className="text-text text-6xl font-semibold min-w-[120px] text-center"
                   placeholder="0"
+                  placeholderTextColor="#AEAEB2"
                   keyboardType="numeric"
                   value={formData.amount}
                   onChangeText={(val) => setFormData({ ...formData, amount: val })}
                   autoFocus={true}
-                  accessibilityLabel="Expense Amount"
                 />
               </View>
             </View>
 
-            {/* Smart Actions */}
-            <View className="flex-row justify-center gap-4 mb-8">
-              <TouchableOpacity 
-                className="bg-paper px-5 py-3 rounded-full border border-border flex-row items-center shadow-sm active:bg-gray-50"
+            {/* Receipt Actions */}
+            <View className="flex-row justify-center gap-3 mb-8">
+                <TouchableOpacity 
+                style={styles.shadowSm}
+                className="bg-paper px-6 py-3 rounded-full border border-systemGray5 flex-row items-center active:bg-systemGray6"
                 onPress={handleTakeReceipt}
-                accessibilityLabel="Take a photo of receipt"
-                accessibilityHint="Opens camera and safely saves receipt image to your phone gallery"
               >
                 <CameraIcon size={18} color="#0F766E" className="mr-2" />
-                <Text className="font-semibold text-primary">Scan Receipt</Text>
+                <Text className="font-semibold text-primary">Scan</Text>
               </TouchableOpacity>
               
               {images.length > 0 && (
                 <TouchableOpacity 
-                  className="bg-primary/10 px-5 py-3 rounded-full border border-primary/20 flex-row items-center active:bg-primary/20"
+                  className="bg-primary/10 px-6 py-3 rounded-full border border-primary/20 flex-row items-center active:bg-primary/20"
                   onPress={() => setImageModalVisible(true)}
-                  accessibilityLabel="View attached receipts"
-                  accessibilityHint="Opens a 3D slider of saved images"
                 >
                   <ImageIcon size={18} color="#0F766E" className="mr-2" />
                   <Text className="font-semibold text-primary">View ({images.length})</Text>
@@ -243,93 +327,125 @@ const AddExpenseScreen = ({ navigation }) => {
               )}
             </View>
 
-            {/* Form Fields */}
-            <View className="gap-6">
-              {/* Category Dropdown */}
-              <View>
-                <Text className="text-muted text-xs font-bold mb-3 uppercase tracking-widest ml-1">Main Category</Text>
-                <TouchableOpacity 
-                  className="bg-paper p-5 rounded-apple border border-border flex-row items-center justify-between active:bg-gray-50 shadow-sm"
-                  onPress={() => handlePresentModalPress('category')}
-                  accessibilityLabel="Select Main Category"
-                >
-                  <View className="flex-row items-center">
-                    <Tag size={20} color="#0F766E" className="mr-3" />
-                    <Text className={`text-lg ${formData.category ? 'text-text' : 'text-muted'}`}>
-                      {formData.category || "Select Main Category"}
+            {/* Selection Group */}
+            <View style={styles.shadowSm} className="bg-paper rounded-[24px] overflow-hidden border border-systemGray5 mb-6">
+              {/* Main Category */}
+              <TouchableOpacity 
+                className="flex-row items-center justify-between p-5 border-b border-systemGray6 active:bg-systemGray6"
+                onPress={() => handlePresentModalPress('mainCategory')}
+              >
+                <View className="flex-row items-center flex-1">
+                  <View className="w-8 items-center mr-3">
+                    {getCategoryIcon(formData.mainCategory)}
+                  </View>
+                  <View>
+                    <Text className="text-muted text-[10px] font-bold uppercase tracking-wider mb-0.5">Category</Text>
+                    <Text className={`text-lg font-medium ${formData.mainCategory ? 'text-text' : 'text-muted'}`}>
+                      {formData.mainCategory || "Select Category"}
                     </Text>
                   </View>
-                  <ChevronDown size={20} color="#86868B" />
-                </TouchableOpacity>
-              </View>
+                </View>
+                <ChevronRight size={18} color="#C7C7CC" />
+              </TouchableOpacity>
 
-              {/* Sub-Category Dropdown */}
-              <View>
-                <Text className="text-muted text-xs font-bold mb-3 uppercase tracking-widest ml-1">Sub-Category / Head</Text>
-                <TouchableOpacity 
-                  className={`bg-paper p-5 rounded-apple border border-border flex-row items-center justify-between active:bg-gray-50 shadow-sm ${!formData.category && 'opacity-50'}`}
-                  onPress={() => formData.category && handlePresentModalPress('subCategory')}
-                  disabled={!formData.category}
-                  accessibilityLabel="Select Expense Sub-Category"
-                >
-                  <View className="flex-row items-center">
-                    <Tag size={20} color="#14B8A6" className="mr-3" />
-                    <Text className={`text-lg ${formData.subCategory ? 'text-text' : 'text-muted'}`}>
-                      {formData.subCategory || "Select Expense Head"}
+              {/* Sub Category */}
+              <TouchableOpacity 
+                className={`flex-row items-center justify-between p-5 border-b border-systemGray6 active:bg-systemGray6 ${!formData.mainCategory && 'opacity-30'}`}
+                onPress={() => formData.mainCategory && handlePresentModalPress('subCategory')}
+                disabled={!formData.mainCategory}
+              >
+                <View className="flex-row items-center flex-1">
+                  <View className="w-8 items-center mr-3">
+                    <Tag size={18} color="#8E8E93" />
+                  </View>
+                  <View>
+                    <Text className="text-muted text-[10px] font-bold uppercase tracking-wider mb-0.5">Sub-Category</Text>
+                    <Text className={`text-lg font-medium ${formData.subCategory ? 'text-text' : 'text-muted'}`}>
+                      {formData.subCategory || "Select Sub-Category"}
                     </Text>
                   </View>
-                  <ChevronDown size={20} color="#86868B" />
-                </TouchableOpacity>
-              </View>
+                </View>
+                <ChevronRight size={18} color="#C7C7CC" />
+              </TouchableOpacity>
 
-              {/* Payment Mode */}
-              <View>
-                <Text className="text-muted text-xs font-bold mb-3 uppercase tracking-widest ml-1">Mode of Payment</Text>
+              {/* Expense Head (Conditional) */}
+              {hasHeads && (
                 <TouchableOpacity 
-                  className="bg-paper p-5 rounded-apple border border-border flex-row items-center justify-between active:bg-gray-50 shadow-sm"
-                  onPress={() => handlePresentModalPress('mode')}
-                  accessibilityLabel="Select Payment Mode"
+                  className={`flex-row items-center justify-between p-5 border-b border-systemGray6 active:bg-systemGray6 ${!formData.subCategory && 'opacity-30'}`}
+                  onPress={() => formData.subCategory && handlePresentModalPress('expenseHead')}
+                  disabled={!formData.subCategory}
                 >
-                  <View className="flex-row items-center">
-                    <CreditCard size={20} color="#0369A1" className="mr-3" />
-                    <Text className="text-lg text-text">{formData.mode}</Text>
+                  <View className="flex-row items-center flex-1">
+                    <View className="w-8 items-center mr-3">
+                      <Check size={18} color="#8E8E93" />
+                    </View>
+                    <View>
+                      <Text className="text-muted text-[10px] font-bold uppercase tracking-wider mb-0.5">Expense Head</Text>
+                      <Text className={`text-lg font-medium ${formData.expenseHead ? 'text-text' : 'text-muted'}`}>
+                        {formData.expenseHead || "Select Expense Head"}
+                      </Text>
+                    </View>
                   </View>
-                  <ChevronDown size={20} color="#86868B" />
+                  <ChevronRight size={18} color="#C7C7CC" />
                 </TouchableOpacity>
-              </View>
+              )}
 
-              {/* Remarks Section */}
-              <View>
-                <View className="flex-row justify-between mb-3 ml-1">
-                  <Text className="text-muted text-xs font-bold uppercase tracking-widest">Remarks</Text>
-                  <Text className="text-red-500 text-[10px] font-bold tracking-widest">COMPULSORY</Text>
-                </View>
-                <View className="bg-paper rounded-apple border border-border p-4 h-32 shadow-sm">
-                  <View className="flex-row items-start">
-                    <Edit3 size={18} color="#86868B" className="mt-1 mr-3" />
-                    <TextInput 
-                      className="flex-1 text-lg text-text text-start h-full"
-                      placeholder="Enter specific details (Vendor, materials...)"
-                      multiline={true}
-                      value={formData.remarks}
-                      onChangeText={(val) => setFormData({ ...formData, remarks: val })}
-                      textAlignVertical="top"
-                      accessibilityLabel="Transaction Remarks"
-                      accessibilityHint="Mandatory field to describe the exact justification."
-                    />
+              {/* Mode of Payment */}
+              <TouchableOpacity 
+                className="flex-row items-center justify-between p-5 active:bg-systemGray6"
+                onPress={() => handlePresentModalPress('mode')}
+              >
+                <View className="flex-row items-center flex-1">
+                  <View className="w-8 items-center mr-3">
+                    <CreditCard size={18} color="#007AFF" />
+                  </View>
+                  <View>
+                    <Text className="text-muted text-[10px] font-bold uppercase tracking-wider mb-0.5">Payment Mode</Text>
+                    <Text className="text-lg font-medium text-text">{formData.mode}</Text>
                   </View>
                 </View>
-              </View>
+                <ChevronRight size={18} color="#C7C7CC" />
+              </TouchableOpacity>
             </View>
-            
-            <View className="h-8" />
-            
+
+            {/* Remarks Section */}
+            <View style={styles.shadowSm} className={`bg-paper rounded-[24px] border ${!formData.remarks && isSubmitting ? 'border-red-500 bg-red-50/50' : 'border-systemGray5'} p-6 mb-8`}>
+              <View className="flex-row items-center mb-4">
+                <View className="bg-systemGray6 p-2 rounded-xl mr-3">
+                  <Edit3 size={18} color="#8E8E93" />
+                </View>
+                <View>
+                  <Text className="text-text font-semibold text-base">Remarks</Text>
+                  <Text className="text-muted text-[11px] font-medium uppercase tracking-wider">Mandatory Field</Text>
+                </View>
+                {!formData.remarks && (
+                  <View className="bg-red-500/10 px-2 py-1 rounded-lg ml-auto border border-red-500/20">
+                    <Text className="text-red-600 text-[10px] font-bold">REQUIRED</Text>
+                  </View>
+                )}
+              </View>
+              <TextInput 
+                className="text-lg text-text leading-6 min-h-[100px]"
+                placeholder="Who was paid? What was bought? Any specific site details?"
+                placeholderTextColor="#C7C7CC"
+                multiline={true}
+                value={formData.remarks}
+                onChangeText={(val) => setFormData({ ...formData, remarks: val })}
+                numberOfLines={4}
+                textAlignVertical="top"
+                selectionColor="#0F766E"
+              />
+            </View>
+
             <TouchableOpacity 
-              className="bg-primary p-5 rounded-apple items-center mb-10 shadow-[0_8px_30px_rgba(15,118,110,0.3)] active:bg-teal-900"
+              style={styles.shadowXl}
+              className={`bg-primary h-[64px] rounded-[22px] items-center justify-center mb-12 active:scale-[0.97] ${isSubmitting && 'opacity-70'}`}
               onPress={handleSave}
-              accessibilityLabel="Complete Expense Submission"
+              disabled={isSubmitting}
             >
-              <Text className="text-white text-xl font-bold tracking-wide">Complete Submission</Text>
+              <Text className="text-white text-xl font-bold tracking-tight">
+                {isSubmitting ? 'Processing...' : 'Submit Transaction'}
+              </Text>
             </TouchableOpacity>
           </ScrollView>
         </View>
@@ -346,5 +462,29 @@ const AddExpenseScreen = ({ navigation }) => {
     </SafeAreaView>
   );
 };
+
+const styles = StyleSheet.create({
+  shadowSm: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
+  },
+  shadowXl: {
+    shadowColor: '#0F766E',
+    shadowOffset: { width: 0, height: 10 },
+    shadowOpacity: 0.2,
+    shadowRadius: 15,
+    elevation: 8,
+  },
+  shadow2xl: {
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 20 },
+    shadowOpacity: 0.3,
+    shadowRadius: 30,
+    elevation: 15,
+  }
+});
 
 export default AddExpenseScreen;
